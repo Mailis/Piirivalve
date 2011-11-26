@@ -143,3 +143,5 @@ field date --fieldName kuni --type java.util.Date --notNull
 web mvc all --package ~.web
 web mvc controller --class ee.piirivalve.web.RegioonilisamineController
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-26 14:55:29
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-26 15:40:26
+security setup
