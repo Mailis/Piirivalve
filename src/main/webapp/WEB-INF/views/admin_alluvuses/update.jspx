@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_piirivalve_entities_Admin_alluvus" modelAttribute="admin_alluvus" path="/admin_alluvuses" versionField="Version" z="kmZ9ifIcL6to7caqtQv4I/TpIPE=">
+        <field:select field="ylemus_yksus" id="c_ee_piirivalve_entities_Admin_alluvus_ylemus_yksus" itemValue="id" items="${riigi_admin_yksuses}" path="/riigi_admin_yksuses" z="6iWASYaXQrVk8vczydWpilvMPyg="/>
+        <field:select field="alluv_yksus" id="c_ee_piirivalve_entities_Admin_alluvus_alluv_yksus" itemValue="id" items="${riigi_admin_yksuses}" path="/riigi_admin_yksuses" z="aUeXwQb/DojfYgrx+7YxKLMAv6o="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Admin_alluvus_avaja" required="true" z="5z8VzgcyEI+vrwj981IBkm++a3M="/>
+        <field:datetime dateTimePattern="${admin_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Admin_alluvus_avatud" required="true" z="/HlpEdNe4JF/W1saBSXWuAd5qMc="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Admin_alluvus_muutja" required="true" z="ZvIkp1fmKv+jtXXBYlNiIMHJDqs="/>
+        <field:datetime dateTimePattern="${admin_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Admin_alluvus_muudetud" required="true" z="h+/xAi8Ennq6etmCEzR8NcjcCsQ="/>
+        <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Admin_alluvus_sulgeja" z="XNYyIWQWTHxRZVt3YiFJwjkrwnY="/>
+        <field:datetime dateTimePattern="${admin_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Admin_alluvus_suletud" required="true" z="TO+ailZiXQUIuDxUv7uogEFhuUc="/>
+        <field:input field="kommentaar" id="c_ee_piirivalve_entities_Admin_alluvus_kommentaar" z="AM8wdl7nb9/xvvGUeoJw/dFgytM="/>
+        <field:datetime dateTimePattern="${admin_alluvus_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Admin_alluvus_alates" required="true" z="xTnFzwklHEZJCSyaDyIWbHkeQpM="/>
+        <field:datetime dateTimePattern="${admin_alluvus_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Admin_alluvus_kuni" required="true" z="IdKX8Xu7kHM8rgaDXEiEu6GAbEo="/>
+    </form:update>
+</div>

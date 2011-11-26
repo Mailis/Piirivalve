@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ee_piirivalve_entities_Ruumiyksus" modelAttribute="ruumiyksus" path="/ruumiyksuses" render="${empty dependencies}" z="Yy7HeHutJA60rMduS9lCR0PIx3o=">
+        <field:select field="riigi_admin_yksus" id="c_ee_piirivalve_entities_Ruumiyksus_riigi_admin_yksus" itemValue="id" items="${riigi_admin_yksuses}" path="/riigi_admin_yksuses" z="tOtFbL0tQDicJuLxROu9/rrA9Wc="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Ruumiyksus_avaja" required="true" z="dSZNTUfJmThmJjmli3Qm6B3ET4M="/>
+        <field:datetime dateTimePattern="${ruumiyksus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Ruumiyksus_avatud" required="true" z="XzcND2kX6XrdRr6/znrZIusS09U="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Ruumiyksus_muutja" required="true" z="K9DGcKzuWfsgZ8LbphxnxWN1xpo="/>
+        <field:datetime dateTimePattern="${ruumiyksus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Ruumiyksus_muudetud" required="true" z="LV6HhjAVzRXrBy30u98IcXnb47s="/>
+        <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Ruumiyksus_sulgeja" z="V06R6WS1z4kl6uTDvTkVw0n2eGo="/>
+        <field:datetime dateTimePattern="${ruumiyksus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Ruumiyksus_suletud" required="true" z="sBN31fnsiIzTiuSAWztcH/CPgxs="/>
+        <field:input field="kood" id="c_ee_piirivalve_entities_Ruumiyksus_kood" max="18" required="true" z="SN3y7swraXzkT8PH7nfPGvrOPMI="/>
+        <field:input field="nimetus" id="c_ee_piirivalve_entities_Ruumiyksus_nimetus" max="18" required="true" z="7RA0FJMq61pX5YppILbvpz7jMps="/>
+        <field:input field="aadress" id="c_ee_piirivalve_entities_Ruumiyksus_aadress" max="18" required="true" z="r+NGOz3iqRN6xDcdQo9cIbgYjpU="/>
+        <field:input field="kommentaar" id="c_ee_piirivalve_entities_Ruumiyksus_kommentaar" z="cEEk1rLpoFLKy3BcevoVLTqKPUo="/>
+        <field:datetime dateTimePattern="${ruumiyksus_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Ruumiyksus_alates" required="true" z="PhwYrw90uT3v+KbQc897EH3lf3E="/>
+        <field:datetime dateTimePattern="${ruumiyksus_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Ruumiyksus_kuni" required="true" z="nzy/i6Ol6KfqFNkm6wqp2kONzEo="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ee_piirivalve_entities_Ruumiyksus" render="${not empty dependencies}" z="vFpIHJYaF5VnHY13yCcKTtvk9ME="/>
+</div>

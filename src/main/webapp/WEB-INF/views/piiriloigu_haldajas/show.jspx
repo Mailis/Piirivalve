@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Piiriloigu_haldaja" object="${piiriloigu_haldaja}" path="/piiriloigu_haldajas" z="KJ96xPi+YNjfrfT+Tkz5JVrrR4A=">
+        <field:display field="vaeosa" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_vaeosa" object="${piiriloigu_haldaja}" z="Pjjn51nvMO/kBdRQovRAQErOXA0="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_avaja" object="${piiriloigu_haldaja}" z="c/Rlc7hsCFl8S4/Z2/wOwJNIhu4="/>
+        <field:display date="true" dateTimePattern="${piiriloigu_haldaja_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_avatud" object="${piiriloigu_haldaja}" z="M3cug8LEAk7D+NVMYL7pPaLAx2g="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_muutja" object="${piiriloigu_haldaja}" z="ZUoPQk3w3YNXLj5o/5xhJU7v4TI="/>
+        <field:display date="true" dateTimePattern="${piiriloigu_haldaja_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_muudetud" object="${piiriloigu_haldaja}" z="oMf3pZ5mknS9CRzuX5dgkFbkq+Y="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_sulgeja" object="${piiriloigu_haldaja}" z="YCNwTpSjKJLGTBulr7AFa07wBOk="/>
+        <field:display date="true" dateTimePattern="${piiriloigu_haldaja_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_suletud" object="${piiriloigu_haldaja}" z="hldrpSfoCXoFPK279ahATmU6Bh8="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_kommentaar" object="${piiriloigu_haldaja}" z="7KqQhXOkpaf0anAGj5X8S3bRMJI="/>
+        <field:display date="true" dateTimePattern="${piiriloigu_haldaja_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_alates" object="${piiriloigu_haldaja}" z="oAqVGHsNuKktDKoZZBp8Wn88dnw="/>
+        <field:display date="true" dateTimePattern="${piiriloigu_haldaja_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Piiriloigu_haldaja_kuni" object="${piiriloigu_haldaja}" z="NCycJ2TJ57OE7c2EZeZ1gs4bkaY="/>
+    </page:show>
+</div>

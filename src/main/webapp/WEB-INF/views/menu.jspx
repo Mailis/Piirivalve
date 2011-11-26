@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_voimalik_alluvus" z="iEG84WDvdAI9E3wgaaUfr9U9Fug=">
+            <menu:item id="i_voimalik_alluvus_new" messageCode="global_menu_new" url="/voimalik_alluvuses?form" z="FPHEVOSAZwWbVJhP8xjxbocOumc="/>
+            <menu:item id="i_voimalik_alluvus_list" messageCode="global_menu_list" url="/voimalik_alluvuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zEwz0PhQsNxTJq8MY9+tS4jug0M="/>
+        </menu:category>
+        <menu:category id="c_riigi_admin_yksuse_liik" z="6BMOfDzpVou5xrgc6l6zApeQzIw=">
+            <menu:item id="i_riigi_admin_yksuse_liik_new" messageCode="global_menu_new" url="/riigi_admin_yksuse_liiks?form" z="ylJ+wZRy8GBAuJ/rDVjM7anOE8I="/>
+            <menu:item id="i_riigi_admin_yksuse_liik_list" messageCode="global_menu_list" url="/riigi_admin_yksuse_liiks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QEz15oxrMg0bjiO9lvEcPh+cg7Y="/>
+        </menu:category>
+        <menu:category id="c_admin_alluvus" z="JWH/2y7t9ZKKuCJGTpgwsIRsRto=">
+            <menu:item id="i_admin_alluvus_new" messageCode="global_menu_new" url="/admin_alluvuses?form" z="Lx0uNso93B6SNq72JkVtanGEyyY="/>
+            <menu:item id="i_admin_alluvus_list" messageCode="global_menu_list" url="/admin_alluvuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XnPzaeoDLI3qD/EbaO4NO8J2qig="/>
+        </menu:category>
+        <menu:category id="c_ruumiyksus" z="0M2fqYLsYkhzDy6kbt2adFhDxZQ=">
+            <menu:item id="i_ruumiyksus_new" messageCode="global_menu_new" url="/ruumiyksuses?form" z="vsJMr2RxNRIRO0KUMkiQmqazO2k="/>
+            <menu:item id="i_ruumiyksus_list" messageCode="global_menu_list" url="/ruumiyksuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iT1dxrRs+dmtDClpX+SEDL2CwVg="/>
+        </menu:category>
+        <menu:category id="c_riigi_admin_yksus" z="vqVDk3PTW2/twE1QFMl1MPWHnnA=">
+            <menu:item id="i_riigi_admin_yksus_new" messageCode="global_menu_new" url="/riigi_admin_yksuses?form" z="lebBykFMlNE1GK8lfu9qnbE9WHc="/>
+            <menu:item id="i_riigi_admin_yksus_list" messageCode="global_menu_list" url="/riigi_admin_yksuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="n2zoQNr2q1oNbquoLaegVwo6hGQ="/>
+        </menu:category>
+        <menu:category id="c_org_yksus" z="FAZSOZon4OQXSdbkglw+9J2A3Oc=">
+            <menu:item id="i_org_yksus_new" messageCode="global_menu_new" url="/org_yksuses?form" z="PDJN9/Q6vSgUEXLApiQXdGnLDJQ="/>
+            <menu:item id="i_org_yksus_list" messageCode="global_menu_list" url="/org_yksuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Mz+X3VJ4Cpc4b1qHmGhbZNLnDtw="/>
+        </menu:category>
+        <menu:category id="c_piiripunkti_alluvus" z="+ill3dTkDajq/TMsfr0hiU9FD9k=">
+            <menu:item id="i_piiripunkti_alluvus_new" messageCode="global_menu_new" url="/piiripunkti_alluvuses?form" z="Cfuvl0o2f9tlTaMnehvse1ti26E="/>
+            <menu:item id="i_piiripunkti_alluvus_list" messageCode="global_menu_list" url="/piiripunkti_alluvuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="17EM2rSfGZCFd6ffol45sKVr4r4="/>
+        </menu:category>
+        <menu:category id="c_piiriloigu_haldaja" z="4B1cKciR8hIzhuz52TccMSknSyk=">
+            <menu:item id="i_piiriloigu_haldaja_new" messageCode="global_menu_new" url="/piiriloigu_haldajas?form" z="7j7VOBNm3ag5zIKHYRB6XyVWiQA="/>
+            <menu:item id="i_piiriloigu_haldaja_list" messageCode="global_menu_list" url="/piiriloigu_haldajas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Ec8WtUf6K979+GWku/6+lEErBVE="/>
+        </menu:category>
+        <menu:category id="c_amet_vaeosas" z="Gns7aHuh+raYnJxS9LTDIfklTYg=">
+            <menu:item id="i_amet_vaeosas_new" messageCode="global_menu_new" url="/amet_vaeosases?form" z="d/3ZHfTkEPGhhx7s1IjyRzo68Ns="/>
+            <menu:item id="i_amet_vaeosas_list" messageCode="global_menu_list" url="/amet_vaeosases?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zDrd1M48bRpQcM76/OFbG9K02wg="/>
+        </menu:category>
+        <menu:category id="c_vaeosa" z="UjcvY5sFG0mXjkNoVhTf6XRReXA=">
+            <menu:item id="i_vaeosa_new" messageCode="global_menu_new" url="/vaeosas?form" z="FAVHgwavmIl9dgzX+VpD/UnJl6o="/>
+            <menu:item id="i_vaeosa_list" messageCode="global_menu_list" url="/vaeosas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="xmlNM27KfbjGn72iRw7P1QBf3Ww="/>
+        </menu:category>
+        <menu:category id="c_vahtkond" z="c/riL356fHQk+/mY3ExRqrVhU/4=">
+            <menu:item id="i_vahtkond_new" messageCode="global_menu_new" url="/vahtkonds?form" z="bvt9LhUzxYB+1+sxarsHufGq1po="/>
+            <menu:item id="i_vahtkond_list" messageCode="global_menu_list" url="/vahtkonds?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yjK8dn1Lr/RZ1HbVVrZdpoTkXKI="/>
+        </menu:category>
+        <menu:category id="c_vaeosa_alluvus" z="df4tqF4u5ZyqSn+40TCrmL7uFo8=">
+            <menu:item id="i_vaeosa_alluvus_new" messageCode="global_menu_new" url="/vaeosa_alluvuses?form" z="YHCW/Dr35tA80RNcwzV98B2aAuE="/>
+            <menu:item id="i_vaeosa_alluvus_list" messageCode="global_menu_list" url="/vaeosa_alluvuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="LAH82O9RLjRHxh8QuwvEEke71tY="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__regioonilisamineindex_id" messageCode="global_generic" url="/regioonilisamine/index" z="JJrsWLjsuEY/qQrWlYsU+3fo+dk="/>
+        </menu:category>
+    </menu:menu>
+</div>

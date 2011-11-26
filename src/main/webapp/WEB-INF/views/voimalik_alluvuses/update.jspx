@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_piirivalve_entities_Voimalik_alluvus" modelAttribute="voimalik_alluvus" path="/voimalik_alluvuses" versionField="Version" z="LlGPoK/gXU92CNN3V45S7xg49r4=">
+        <field:select field="riigi_admin_yksuse_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik" itemValue="id" items="${riigi_admin_yksuse_liiks}" path="/riigi_admin_yksuse_liiks" z="I+AzB8kxdw3JD/9Bgdmr/x2lXTM="/>
+        <field:select field="voimalik_alluv_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik" itemValue="id" items="${riigi_admin_yksuse_liiks}" path="/riigi_admin_yksuse_liiks" z="SGjvnirBhrKr/7E14HBTslYGJRI="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja" required="true" z="0EHnWk5vQB4rEjRSlipj6L3J+JA="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud" required="true" z="EuFgOaAzofFlHW5fGSSRlDeWatw="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja" required="true" z="JNUUOOXoPxhrSRNGu0NFtBUQoA4="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud" required="true" z="8Y1SQ3yt6vkVJsHOf4DC7++3G/8="/>
+        <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Voimalik_alluvus_sulgeja" z="XdGBDztH3NRfiHDJYReHo7e80no="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Voimalik_alluvus_suletud" required="true" z="V22PiDovH6HED6CLyXxD1wOlwi8="/>
+        <field:input field="kommentaar" id="c_ee_piirivalve_entities_Voimalik_alluvus_kommentaar" z="jTS4lCt8/BTd7q7PgHLWxMH7nWw="/>
+    </form:update>
+</div>

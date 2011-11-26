@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Vahtkond" items="${vahtkonds}" z="3iVldwNTnS7iK/jUpNlZLg/gTjQ=">
+        <table:table data="${vahtkonds}" id="l_ee_piirivalve_entities_Vahtkond" path="/vahtkonds" z="zWLFZToOZhtrz+wIUuwzv2bvYoI=">
+            <table:column id="c_ee_piirivalve_entities_Vahtkond_vaeosa" property="vaeosa" z="qVRVVZGInYR0NOI1G5uFnw5hMn4="/>
+            <table:column id="c_ee_piirivalve_entities_Vahtkond_avaja" property="avaja" z="uA5UMfy6xJvvQ+h/U2a3sn7heAo="/>
+            <table:column date="true" dateTimePattern="${vahtkond_avatud_date_format}" id="c_ee_piirivalve_entities_Vahtkond_avatud" property="avatud" z="lgJy7seGk5G2xIj/XGcb74nbqxM="/>
+            <table:column id="c_ee_piirivalve_entities_Vahtkond_muutja" property="muutja" z="7LiUGP0Nt9Kn1JBwXJ0TckTUhHk="/>
+            <table:column date="true" dateTimePattern="${vahtkond_muudetud_date_format}" id="c_ee_piirivalve_entities_Vahtkond_muudetud" property="muudetud" z="1F6aM4j9Ebja0aw8dqXgZNOCbs0="/>
+            <table:column id="c_ee_piirivalve_entities_Vahtkond_sulgeja" property="sulgeja" z="vVUrzah9YJHjg3K4ujVQQbB01e8="/>
+        </table:table>
+    </page:list>
+</div>

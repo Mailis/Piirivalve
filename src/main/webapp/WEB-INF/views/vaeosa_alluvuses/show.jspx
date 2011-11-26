@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Vaeosa_alluvus" object="${vaeosa_alluvus}" path="/vaeosa_alluvuses" z="DdUgdN1QOtJxqRppHVpMRk6ZBQc=">
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Vaeosa_alluvus_avaja" object="${vaeosa_alluvus}" z="xptHETgOJg/0uC809N39aLfAWs0="/>
+        <field:display date="true" dateTimePattern="${vaeosa_alluvus_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Vaeosa_alluvus_avatud" object="${vaeosa_alluvus}" z="9eSomXgVoKOfcoErRKUqQqrwbhA="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Vaeosa_alluvus_muutja" object="${vaeosa_alluvus}" z="j4cXEmrZP3/SRxn0f7esYDOeq8M="/>
+        <field:display date="true" dateTimePattern="${vaeosa_alluvus_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Vaeosa_alluvus_muudetud" object="${vaeosa_alluvus}" z="ufPC73MbSpN5AeVkltDJ3YGrlW0="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Vaeosa_alluvus_sulgeja" object="${vaeosa_alluvus}" z="DW5GrjCHuaqBtRAU9lEeM9kCu8M="/>
+        <field:display date="true" dateTimePattern="${vaeosa_alluvus_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Vaeosa_alluvus_suletud" object="${vaeosa_alluvus}" z="tQmsn0q1NYuqpzHXSiPaUCP4juM="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Vaeosa_alluvus_kommentaar" object="${vaeosa_alluvus}" z="yWgKXN5OmH34gp7m4L0GbwpQ1G0="/>
+        <field:display date="true" dateTimePattern="${vaeosa_alluvus_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Vaeosa_alluvus_alates" object="${vaeosa_alluvus}" z="aUAoXqNvonL5BxmoJa57HAinvhk="/>
+        <field:display date="true" dateTimePattern="${vaeosa_alluvus_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Vaeosa_alluvus_kuni" object="${vaeosa_alluvus}" z="N3goIkyVAloZpqAjy+uZraQN3SU="/>
+    </page:show>
+</div>

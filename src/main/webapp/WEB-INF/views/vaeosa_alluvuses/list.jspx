@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Vaeosa_alluvus" items="${vaeosa_alluvuses}" z="rWPqM3F7CCzuQweH2rUl1nd+bRs=">
+        <table:table data="${vaeosa_alluvuses}" id="l_ee_piirivalve_entities_Vaeosa_alluvus" path="/vaeosa_alluvuses" z="LMOiqJVI+aFCaONtfIkmj7LYcEw=">
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_alluvus_avaja" property="avaja" z="vkcbkgL+FOeYr03Bv7Avp/GcMwY="/>
+            <table:column date="true" dateTimePattern="${vaeosa_alluvus_avatud_date_format}" id="c_ee_piirivalve_entities_Vaeosa_alluvus_avatud" property="avatud" z="b2XgDGztrnMcuWzi9nCtnhorCSM="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_alluvus_muutja" property="muutja" z="xI9Gxr5Y89fXERmN6TGyOe+snwM="/>
+            <table:column date="true" dateTimePattern="${vaeosa_alluvus_muudetud_date_format}" id="c_ee_piirivalve_entities_Vaeosa_alluvus_muudetud" property="muudetud" z="dpq8ziazTI8Sf8enZY3mUQXBuek="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_alluvus_sulgeja" property="sulgeja" z="xKs4KsEITPBhGY7T6O/tm61HdIU="/>
+            <table:column date="true" dateTimePattern="${vaeosa_alluvus_suletud_date_format}" id="c_ee_piirivalve_entities_Vaeosa_alluvus_suletud" property="suletud" z="9OU+krBJyuNadHXA8/0/7IsvkXE="/>
+        </table:table>
+    </page:list>
+</div>

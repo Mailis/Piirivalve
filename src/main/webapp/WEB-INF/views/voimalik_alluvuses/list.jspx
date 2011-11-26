@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Voimalik_alluvus" items="${voimalik_alluvuses}" z="AIFBDM9+V+5BukNPz2Xqx/iZoC0=">
+        <table:table data="${voimalik_alluvuses}" id="l_ee_piirivalve_entities_Voimalik_alluvus" path="/voimalik_alluvuses" z="N5UdQ9KDVQxplRvzMGKazl4amEA=">
+            <table:column id="c_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik" property="riigi_admin_yksuse_liik" z="uHktM0hERs4hsxa2SainEWf6lRM="/>
+            <table:column id="c_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik" property="voimalik_alluv_liik" z="xMwi1HRz5SGB7xi1lCb/3iKZjxc="/>
+            <table:column id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja" property="avaja" z="3BNXeLUV8ZyMXZKRmj08LJcVfsg="/>
+            <table:column date="true" dateTimePattern="${voimalik_alluvus_avatud_date_format}" id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud" property="avatud" z="Af4wF5VH7miRldIHJAAU6Hk9Qt4="/>
+            <table:column id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja" property="muutja" z="dGy3LD8WfLunvsu7Gn28le+Zaz8="/>
+            <table:column date="true" dateTimePattern="${voimalik_alluvus_muudetud_date_format}" id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud" property="muudetud" z="IFMRWPfBtjlN5yeTrxLPbdaAt4Y="/>
+        </table:table>
+    </page:list>
+</div>

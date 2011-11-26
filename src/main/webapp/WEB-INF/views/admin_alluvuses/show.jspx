@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Admin_alluvus" object="${admin_alluvus}" path="/admin_alluvuses" z="nv0ZICkhINWNlq3Qmw/pTQqljes=">
+        <field:display field="ylemus_yksus" id="s_ee_piirivalve_entities_Admin_alluvus_ylemus_yksus" object="${admin_alluvus}" z="Ck7FcrLT5p5H4Rcn2u8sQapJ2vs="/>
+        <field:display field="alluv_yksus" id="s_ee_piirivalve_entities_Admin_alluvus_alluv_yksus" object="${admin_alluvus}" z="3CgevNBBEpB529uCYRCuUz3LIgM="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Admin_alluvus_avaja" object="${admin_alluvus}" z="vP6/+ALYMLFO63iGaNuq3QTtZX0="/>
+        <field:display date="true" dateTimePattern="${admin_alluvus_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Admin_alluvus_avatud" object="${admin_alluvus}" z="2gpYkbstwGOIi0Z794pf6kO+iGE="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Admin_alluvus_muutja" object="${admin_alluvus}" z="LFdD1sefnS7WHdHLtSzYjf7b9U4="/>
+        <field:display date="true" dateTimePattern="${admin_alluvus_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Admin_alluvus_muudetud" object="${admin_alluvus}" z="RMW6hIaX0lJVOkMYYbq61X4lPiA="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Admin_alluvus_sulgeja" object="${admin_alluvus}" z="cevBPqBpyES9I0s55MFVZyqEFVs="/>
+        <field:display date="true" dateTimePattern="${admin_alluvus_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Admin_alluvus_suletud" object="${admin_alluvus}" z="IbHiPWCW74NBf7RMaJj+mkLkDFE="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Admin_alluvus_kommentaar" object="${admin_alluvus}" z="lWkwhwxh9pULvUP0CBmaGKK1pRg="/>
+        <field:display date="true" dateTimePattern="${admin_alluvus_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Admin_alluvus_alates" object="${admin_alluvus}" z="VVPLVRKIqRc9kMHQNUasUFoWkuM="/>
+        <field:display date="true" dateTimePattern="${admin_alluvus_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Admin_alluvus_kuni" object="${admin_alluvus}" z="isc4+FkV45b31n8hsQpz3fOOtxI="/>
+    </page:show>
+</div>

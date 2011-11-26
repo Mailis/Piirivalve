@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Vaeosa" items="${vaeosas}" z="1fg333b3ZH6RdNfKikcQRWURYsg=">
+        <table:table data="${vaeosas}" id="l_ee_piirivalve_entities_Vaeosa" path="/vaeosas" z="j+kXqGt6Hq3OnJDBgLTkPgdExNA=">
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_riigi_admin_yksus" property="riigi_admin_yksus" z="4vDu1g1/FBjXmWBd8dUWAwJYAQw="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_org_yksused" property="org_yksused" z="lpUb9F8XUAvGq10aS+h6+y4cMTU="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_piiripunkti_alluvused" property="piiripunkti_alluvused" z="9h6vZsQqPuv8mTeRyTXvf8FXuR4="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_piiriloigu_haldajad" property="piiriloigu_haldajad" z="Mxo1KREk0wxQKLC6eIZq+TjmZ90="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_vahtkonnad" property="vahtkonnad" z="+r14/2IzUa6tqPvBTc8IxPc2+Jg="/>
+            <table:column id="c_ee_piirivalve_entities_Vaeosa_ametid_vaeosas" property="ametid_vaeosas" z="H+lnfY8gsktm1qzYgyXKNw0nWJc="/>
+        </table:table>
+    </page:list>
+</div>

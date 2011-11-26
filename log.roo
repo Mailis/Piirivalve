@@ -1,0 +1,145 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-18 19:45:48
+project --topLevelPackage ee.piirivalve --projectName Piirivalve --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-18 19:45:49
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-18 19:45:55
+persistence setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+database properties set --key database.url --value jdbc:hsqldb:file:${user.home}/i377/Team01/db;shutdown=true
+web mvc setup  
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-18 20:10:11
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-18 20:41:59
+entity --class ~.entities.Riigi_admin_yksuse_liik
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 10 --notNull
+field string --fieldName nimetus --sizeMax 100 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Riigi_admin_yksus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 20 --notNull
+field string --fieldName nimetus --sizeMax 100 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Admin_alluvus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Voimalik_alluvus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull 
+field string --fieldName kommentaar
+entity --class ~.entities.Vaeosa
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 20 --notNull
+field string --fieldName nimetus --sizeMax 100 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Org_yksus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 20 --notNull
+field string --fieldName nimetus --sizeMax 100 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Vaeosa_alluvus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Vahtkond
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 20 --notNull
+field string --fieldName nimetus --sizeMax 100 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Ruumiyksus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kood --sizeMax 18 --notNull
+field string --fieldName nimetus --sizeMax 18 --notNull
+field string --fieldName aadress --sizeMax 18 --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Piiripunkti_alluvus
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Piiriloigu_haldaja
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+entity --class ~.entities.Amet_vaeosas
+field string --fieldName avaja --notNull --sizeMax 32
+field date --fieldName avatud --type java.util.Date --notNull
+field string --fieldName muutja --sizeMax 32 --notNull
+field date --fieldName muudetud --type java.util.Date --notNull
+field string --fieldName sulgeja --sizeMax 32
+field date --fieldName suletud --type java.util.Date --notNull 
+field string --fieldName kommentaar
+field date --fieldName alates --type java.util.Date --notNull
+field date --fieldName kuni --type java.util.Date --notNull
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-18 21:15:16
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-25 23:39:20
+web mvc all --package ~.web
+web mvc controller --class ee.piirivalve.web.RegioonilisamineController
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-26 14:55:29

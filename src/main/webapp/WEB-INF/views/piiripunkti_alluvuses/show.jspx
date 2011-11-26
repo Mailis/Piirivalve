@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Piiripunkti_alluvus" object="${piiripunkti_alluvus}" path="/piiripunkti_alluvuses" z="O8t+kBcHd+3byXQ18C81nobwnNI=">
+        <field:display field="vaeosa" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_vaeosa" object="${piiripunkti_alluvus}" z="3V3INBPqxA543dWfaXtA+ixed6A="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_avaja" object="${piiripunkti_alluvus}" z="4LDqncHl0mCUqWWM4v++pOuIR8o="/>
+        <field:display date="true" dateTimePattern="${piiripunkti_alluvus_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_avatud" object="${piiripunkti_alluvus}" z="LPooHoCSC6AOBxxne9cBRGFzcpM="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_muutja" object="${piiripunkti_alluvus}" z="FNeuT7Kf/Uacru/jKzPIRABm6x0="/>
+        <field:display date="true" dateTimePattern="${piiripunkti_alluvus_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_muudetud" object="${piiripunkti_alluvus}" z="kt6wHYLfXnIY/KF9WLE3dBUYoVU="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_sulgeja" object="${piiripunkti_alluvus}" z="ZjvflzyUr4fanye1XS9NmD3YirY="/>
+        <field:display date="true" dateTimePattern="${piiripunkti_alluvus_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_suletud" object="${piiripunkti_alluvus}" z="AVYmYrHDfMqT5dKg6tXGltO10LE="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_kommentaar" object="${piiripunkti_alluvus}" z="PkR7JS2deeoJ8+yukFnC4ZZ8mmk="/>
+        <field:display date="true" dateTimePattern="${piiripunkti_alluvus_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_alates" object="${piiripunkti_alluvus}" z="L5ArB+pDIX/khAJodL655UIO/0A="/>
+        <field:display date="true" dateTimePattern="${piiripunkti_alluvus_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Piiripunkti_alluvus_kuni" object="${piiripunkti_alluvus}" z="uaL56LP9q34Ye6YYdbNDoY9ig8k="/>
+    </page:show>
+</div>

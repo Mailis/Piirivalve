@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Ruumiyksus" items="${ruumiyksuses}" z="h6LBLq1l+p1NTaW5qXMAcfKTkJY=">
+        <table:table data="${ruumiyksuses}" id="l_ee_piirivalve_entities_Ruumiyksus" path="/ruumiyksuses" z="i7fE5esQVL+WDsmIuwpImeHv0mI=">
+            <table:column id="c_ee_piirivalve_entities_Ruumiyksus_riigi_admin_yksus" property="riigi_admin_yksus" z="yONwd2mLcQy/a3aNyNFacxa82vk="/>
+            <table:column id="c_ee_piirivalve_entities_Ruumiyksus_avaja" property="avaja" z="tVvo+Rhl+5MKH+qHJfDSqCyZKEY="/>
+            <table:column date="true" dateTimePattern="${ruumiyksus_avatud_date_format}" id="c_ee_piirivalve_entities_Ruumiyksus_avatud" property="avatud" z="bx/PXuQNdzzwv/iegea0L7XTapU="/>
+            <table:column id="c_ee_piirivalve_entities_Ruumiyksus_muutja" property="muutja" z="Ui1+uHhmVWfrhSzo8xrv8/kQZ88="/>
+            <table:column date="true" dateTimePattern="${ruumiyksus_muudetud_date_format}" id="c_ee_piirivalve_entities_Ruumiyksus_muudetud" property="muudetud" z="/dGaEqXvgOLFKs4a+GUvqfAODDo="/>
+            <table:column id="c_ee_piirivalve_entities_Ruumiyksus_sulgeja" property="sulgeja" z="WPLU0EVbJPKM0elk3KdNQci3qVs="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Vahtkond" object="${vahtkond}" path="/vahtkonds" z="8/sDcJITyxab40EP5PMevmqqZgs=">
+        <field:display field="vaeosa" id="s_ee_piirivalve_entities_Vahtkond_vaeosa" object="${vahtkond}" z="YB+/yQEUsHq/v9MuBBqMFmPeBBk="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Vahtkond_avaja" object="${vahtkond}" z="rtSU+JpRF9FQ+KBgNUBrzytZQ6c="/>
+        <field:display date="true" dateTimePattern="${vahtkond_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Vahtkond_avatud" object="${vahtkond}" z="hAyD7daloHfCNyJ+icWcQ5RVMJM="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Vahtkond_muutja" object="${vahtkond}" z="+aE1PjLLEhFq/Tw2IZ4gGg95Ot8="/>
+        <field:display date="true" dateTimePattern="${vahtkond_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Vahtkond_muudetud" object="${vahtkond}" z="mvLcz0c04ILtZUXCDUfNWp6VAxg="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Vahtkond_sulgeja" object="${vahtkond}" z="Otfgx4qnKllYdHQiTxjoIxjah1I="/>
+        <field:display date="true" dateTimePattern="${vahtkond_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Vahtkond_suletud" object="${vahtkond}" z="Ocwiir3Am8oMAT9GEeJLDOpkdIY="/>
+        <field:display field="kood" id="s_ee_piirivalve_entities_Vahtkond_kood" object="${vahtkond}" z="pZkugjv1nwxXpIMiFk6y+KNjpFM="/>
+        <field:display field="nimetus" id="s_ee_piirivalve_entities_Vahtkond_nimetus" object="${vahtkond}" z="wPouxRGOUKzWryzGFOdyHCZNmsM="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Vahtkond_kommentaar" object="${vahtkond}" z="wLAOO3DD5rtKi8QkKhnJ7Ug6tHU="/>
+        <field:display date="true" dateTimePattern="${vahtkond_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Vahtkond_alates" object="${vahtkond}" z="dobEOr5SSDrZn7I8SnpLqGfvDxY="/>
+        <field:display date="true" dateTimePattern="${vahtkond_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Vahtkond_kuni" object="${vahtkond}" z="yDBO6uHJ82JuD4ACqmQhmBTFywU="/>
+    </page:show>
+</div>

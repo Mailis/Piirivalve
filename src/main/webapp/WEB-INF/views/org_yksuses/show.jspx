@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Org_yksus" object="${org_yksus}" path="/org_yksuses" z="3f83qu1TnqRoU1cXY5s0YERTUO4=">
+        <field:display field="vaeosa" id="s_ee_piirivalve_entities_Org_yksus_vaeosa" object="${org_yksus}" z="U55mn4LqK8yP8IiNBgC5WH6jRUE="/>
+        <field:display field="org_yksus" id="s_ee_piirivalve_entities_Org_yksus_org_yksus" object="${org_yksus}" z="cx6E4m8ZJjvr11zho9rZKsAxXyw="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Org_yksus_avaja" object="${org_yksus}" z="H7scCPJe//50vG0+rZoKFynizXI="/>
+        <field:display date="true" dateTimePattern="${org_yksus_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Org_yksus_avatud" object="${org_yksus}" z="Jg68SfHgZHeo5ZHVHOkmRZ6XvaI="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Org_yksus_muutja" object="${org_yksus}" z="p4/hwztDVHXbuqAjBCjNeY4fEVs="/>
+        <field:display date="true" dateTimePattern="${org_yksus_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Org_yksus_muudetud" object="${org_yksus}" z="iot/UOBgmzY1awmNPYSoz22cyyg="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Org_yksus_sulgeja" object="${org_yksus}" z="uwvrI/AKBj6d6lwj6+sF7qi97hg="/>
+        <field:display date="true" dateTimePattern="${org_yksus_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Org_yksus_suletud" object="${org_yksus}" z="yjOjsqXx09JNxKR7gdzQqGwvfjg="/>
+        <field:display field="kood" id="s_ee_piirivalve_entities_Org_yksus_kood" object="${org_yksus}" z="zDrqdwE+Ii5gKoBx4+SfiTHjGOE="/>
+        <field:display field="nimetus" id="s_ee_piirivalve_entities_Org_yksus_nimetus" object="${org_yksus}" z="A0xtasIG8sx5qs6NdmV3VCEtzAY="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Org_yksus_kommentaar" object="${org_yksus}" z="lIS5hwWnNHgw7NPrajGimJ1vRpY="/>
+        <field:display date="true" dateTimePattern="${org_yksus_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Org_yksus_alates" object="${org_yksus}" z="FnrRnytuJeUsDpStzEPGbcs9xvs="/>
+        <field:display date="true" dateTimePattern="${org_yksus_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Org_yksus_kuni" object="${org_yksus}" z="sK3ntCGqX5oteDwvWCaCUYziM9c="/>
+    </page:show>
+</div>

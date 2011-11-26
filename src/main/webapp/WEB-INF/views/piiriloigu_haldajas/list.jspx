@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Piiriloigu_haldaja" items="${piiriloigu_haldajas}" z="AEh7hpp/5+LMuSIOu9iymRS4fRE=">
+        <table:table data="${piiriloigu_haldajas}" id="l_ee_piirivalve_entities_Piiriloigu_haldaja" path="/piiriloigu_haldajas" z="kbTKLp1yctWYSNujaOsLShOzSHc=">
+            <table:column id="c_ee_piirivalve_entities_Piiriloigu_haldaja_vaeosa" property="vaeosa" z="TvIW39l4WmeaS+SFDm//upl3UEY="/>
+            <table:column id="c_ee_piirivalve_entities_Piiriloigu_haldaja_avaja" property="avaja" z="7ojYAh4Ysjvqdr/LJO2JrMHEuww="/>
+            <table:column date="true" dateTimePattern="${piiriloigu_haldaja_avatud_date_format}" id="c_ee_piirivalve_entities_Piiriloigu_haldaja_avatud" property="avatud" z="ZGPen0Wfxo01hlM1kun8gg8O4cs="/>
+            <table:column id="c_ee_piirivalve_entities_Piiriloigu_haldaja_muutja" property="muutja" z="7RhRgqLctLF3OmmfG2Pya6j9pLo="/>
+            <table:column date="true" dateTimePattern="${piiriloigu_haldaja_muudetud_date_format}" id="c_ee_piirivalve_entities_Piiriloigu_haldaja_muudetud" property="muudetud" z="y4zSFjIV8p9uHOvCAkwlR/lZaO8="/>
+            <table:column id="c_ee_piirivalve_entities_Piiriloigu_haldaja_sulgeja" property="sulgeja" z="LFmLqE6N7EEsRHB4G2Av4GXgLOk="/>
+        </table:table>
+    </page:list>
+</div>

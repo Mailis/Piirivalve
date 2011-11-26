@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_piirivalve_entities_Riigi_admin_yksus" modelAttribute="riigi_admin_yksus" path="/riigi_admin_yksuses" versionField="Version" z="bIt+ZLttFxmMZofgDIZ0xe+TbH8=">
+        <field:select field="riigi_admin_yksuse_liik" id="c_ee_piirivalve_entities_Riigi_admin_yksus_riigi_admin_yksuse_liik" itemValue="id" items="${riigi_admin_yksuse_liiks}" path="/riigi_admin_yksuse_liiks" z="QMHaHbd6PEaCLnFYo1ufezAZwg0="/>
+        <field:simple field="vaeosad" id="c_ee_piirivalve_entities_Riigi_admin_yksus_vaeosad" messageCode="entity_reference_not_managed" messageCodeAttribute="Vaeosa" z="uOZ5dftJiTXx+lWgcQS4mLpVMpc="/>
+        <field:simple field="admin_alluvused_1" id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_1" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin_alluvus" z="ImxByW10bHno781542Mumt9Eb8A="/>
+        <field:simple field="admin_alluvused_2" id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_2" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin_alluvus" z="2ERakEwnFjBkaJ4u8NUHjeZJteU="/>
+        <field:simple field="ruumiyksused" id="c_ee_piirivalve_entities_Riigi_admin_yksus_ruumiyksused" messageCode="entity_reference_not_managed" messageCodeAttribute="Ruumiyksus" z="I+Gm2Bq88tkUJfYdYVukDTu7mO4="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avaja" required="true" z="M2gIbPmgR0V7MrsXs60rirZ3vRs="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avatud" required="true" z="dg7uTfg+lfIotykby1TwQmWbu2Y="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muutja" required="true" z="+Trx9QiLXB7gUUH+leYb6Bht7FY="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muudetud" required="true" z="QTM1Ad8/hl3OylenGHwkYOzH0Rk="/>
+        <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_sulgeja" z="3tyg7M3F5jXNW4eXPd71pMjHvSY="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_suletud" required="true" z="z3TXEh1n3TfOxN4hc4A5m6B+TrY="/>
+        <field:input field="kood" id="c_ee_piirivalve_entities_Riigi_admin_yksus_kood" max="20" required="true" z="T2kOLzP+MPWu7REqVwhrExJ5uAM="/>
+        <field:textarea field="nimetus" id="c_ee_piirivalve_entities_Riigi_admin_yksus_nimetus" required="true" z="T9AoZd/oieE/roW5H145dv59J3g="/>
+        <field:input field="kommentaar" id="c_ee_piirivalve_entities_Riigi_admin_yksus_kommentaar" z="lTkIhb4qXnIyDcrSdwvfzYGAZUY="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Riigi_admin_yksus_alates" required="true" z="+I6G8HO39mTHd/AyZ183NrjSxFc="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Riigi_admin_yksus_kuni" required="true" z="76QCVWVTwiHl7luOPZm8ISMhCT0="/>
+    </form:update>
+</div>

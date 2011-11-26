@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_piirivalve_entities_Piiripunkti_alluvus" items="${piiripunkti_alluvuses}" z="XTNDJudAsO+E2BbQrKB1ObVOWKI=">
+        <table:table data="${piiripunkti_alluvuses}" id="l_ee_piirivalve_entities_Piiripunkti_alluvus" path="/piiripunkti_alluvuses" z="B6sWkc3xcw8XYPU7iT8MSFNHNcM=">
+            <table:column id="c_ee_piirivalve_entities_Piiripunkti_alluvus_vaeosa" property="vaeosa" z="NhLcc5vO/plUpDg8vjV/Qw/xZVw="/>
+            <table:column id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avaja" property="avaja" z="tlvL2v+zScJl2vJ0xtggSCnMGPE="/>
+            <table:column date="true" dateTimePattern="${piiripunkti_alluvus_avatud_date_format}" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avatud" property="avatud" z="QsAMHZd7rJMKGda0JQ7V4EqpaQY="/>
+            <table:column id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muutja" property="muutja" z="5j0E9XR5iq17bHV6KG5nyhkS9VM="/>
+            <table:column date="true" dateTimePattern="${piiripunkti_alluvus_muudetud_date_format}" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muudetud" property="muudetud" z="tGEzm28j7uDUk70WbOeWuf8SMD4="/>
+            <table:column id="c_ee_piirivalve_entities_Piiripunkti_alluvus_sulgeja" property="sulgeja" z="s/VBetEAhZyIW1HNMx9dUh7iTqI="/>
+        </table:table>
+    </page:list>
+</div>

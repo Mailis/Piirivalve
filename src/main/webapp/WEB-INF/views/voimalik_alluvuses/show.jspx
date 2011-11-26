@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Voimalik_alluvus" object="${voimalik_alluvus}" path="/voimalik_alluvuses" z="Vwo0s4ez6bS2uJqWiK4XKfza3io=">
+        <field:display field="riigi_admin_yksuse_liik" id="s_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik" object="${voimalik_alluvus}" z="7LnJXA2KhLHSpTosYbqEtvfXv/A="/>
+        <field:display field="voimalik_alluv_liik" id="s_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik" object="${voimalik_alluvus}" z="qrIcDX865OxYmsOrw1UWH2s8ZNI="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Voimalik_alluvus_avaja" object="${voimalik_alluvus}" z="wda3nJ6BH0Z11tu/uM3OiYM4Q64="/>
+        <field:display date="true" dateTimePattern="${voimalik_alluvus_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Voimalik_alluvus_avatud" object="${voimalik_alluvus}" z="4gKjk0YpJ+/AiuFzl/u8bBEYjcQ="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Voimalik_alluvus_muutja" object="${voimalik_alluvus}" z="Uddaqb/gceXaDzeh7nI9nlmDWaw="/>
+        <field:display date="true" dateTimePattern="${voimalik_alluvus_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Voimalik_alluvus_muudetud" object="${voimalik_alluvus}" z="80+EuA9WzPQKlXkXCb7pkdZ4ZLc="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Voimalik_alluvus_sulgeja" object="${voimalik_alluvus}" z="U7/nHn1v7q59K3N+vX9WxRil5T8="/>
+        <field:display date="true" dateTimePattern="${voimalik_alluvus_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Voimalik_alluvus_suletud" object="${voimalik_alluvus}" z="Wfg6bkow28Ei522Y3OkhJKtkmkU="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Voimalik_alluvus_kommentaar" object="${voimalik_alluvus}" z="hg12VVItKZg8U03yIQleyQK8z8o="/>
+    </page:show>
+</div>

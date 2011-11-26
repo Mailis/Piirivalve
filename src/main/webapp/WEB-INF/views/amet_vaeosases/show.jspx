@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_piirivalve_entities_Amet_vaeosas" object="${amet_vaeosas}" path="/amet_vaeosases" z="88Tmg04FvtHbZSnRBjBTJM1CjcI=">
+        <field:display field="vaeosa" id="s_ee_piirivalve_entities_Amet_vaeosas_vaeosa" object="${amet_vaeosas}" z="1pUMhE6GwQGKu0E8Gp5rPCetwYo="/>
+        <field:display field="avaja" id="s_ee_piirivalve_entities_Amet_vaeosas_avaja" object="${amet_vaeosas}" z="OLJ9xsooFM8fYSyKHk2bYIebP80="/>
+        <field:display date="true" dateTimePattern="${amet_vaeosas_avatud_date_format}" field="avatud" id="s_ee_piirivalve_entities_Amet_vaeosas_avatud" object="${amet_vaeosas}" z="Q9ZmoO6QF7bHO9MmCk7TSxCijXc="/>
+        <field:display field="muutja" id="s_ee_piirivalve_entities_Amet_vaeosas_muutja" object="${amet_vaeosas}" z="feVXMwe240UZEKvTvoRGcte5Yak="/>
+        <field:display date="true" dateTimePattern="${amet_vaeosas_muudetud_date_format}" field="muudetud" id="s_ee_piirivalve_entities_Amet_vaeosas_muudetud" object="${amet_vaeosas}" z="c3JzeLedBbHxN9+TyRbJM3g5ibA="/>
+        <field:display field="sulgeja" id="s_ee_piirivalve_entities_Amet_vaeosas_sulgeja" object="${amet_vaeosas}" z="spm/gySa88lCAnAvVPepGTOEpKU="/>
+        <field:display date="true" dateTimePattern="${amet_vaeosas_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Amet_vaeosas_suletud" object="${amet_vaeosas}" z="rjeyqMJigNbvGJiX9fbVlI5muyM="/>
+        <field:display field="kommentaar" id="s_ee_piirivalve_entities_Amet_vaeosas_kommentaar" object="${amet_vaeosas}" z="Vc0MmVFF/q1YcMjrR/6dpQbCSms="/>
+        <field:display date="true" dateTimePattern="${amet_vaeosas_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Amet_vaeosas_alates" object="${amet_vaeosas}" z="ba5QTY10aS1BbpSUrnxBTBmH9ms="/>
+        <field:display date="true" dateTimePattern="${amet_vaeosas_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Amet_vaeosas_kuni" object="${amet_vaeosas}" z="2yVcO9W73ECbkJIOnuLL8Uq6gi0="/>
+    </page:show>
+</div>
