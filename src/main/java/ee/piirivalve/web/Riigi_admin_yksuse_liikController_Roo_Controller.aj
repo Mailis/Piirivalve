@@ -27,18 +27,6 @@ import org.springframework.web.util.WebUtils;
 
 privileged aspect Riigi_admin_yksuse_liikController_Roo_Controller {
     
-    @RequestMapping(method = RequestMethod.POST)
-    public String Riigi_admin_yksuse_liikController.create(@Valid Riigi_admin_yksuse_liik riigi_admin_yksuse_liik, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
-        if (bindingResult.hasErrors()) {
-            uiModel.addAttribute("riigi_admin_yksuse_liik", riigi_admin_yksuse_liik);
-            addDateTimeFormatPatterns(uiModel);
-            return "riigi_admin_yksuse_liiks/create";
-        }
-        uiModel.asMap().clear();
-        riigi_admin_yksuse_liik.persist();
-        return "redirect:/riigi_admin_yksuse_liiks/" + encodeUrlPathSegment(riigi_admin_yksuse_liik.getId().toString(), httpServletRequest);
-    }
-    
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String Riigi_admin_yksuse_liikController.createForm(Model uiModel) {
         uiModel.addAttribute("riigi_admin_yksuse_liik", new Riigi_admin_yksuse_liik());

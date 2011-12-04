@@ -3,8 +3,13 @@ package ee.piirivalve.entities;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import java.util.Calendar;
 import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -31,7 +36,7 @@ public class Org_yksus {
 
     @NotNull
     @Size(max = 32)
-    private String avaja;
+    private String avaja = minuNimi();
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -40,7 +45,7 @@ public class Org_yksus {
 
     @NotNull
     @Size(max = 32)
-    private String muutja;
+    private String muutja = minuNimi();
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -53,7 +58,7 @@ public class Org_yksus {
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date suletud;
+    private Date suletud = maxDate();
 
     @NotNull
     @Size(max = 20)
@@ -107,4 +112,20 @@ public class Org_yksus {
 	public void setOrg_yksused(Set<Org_yksus> param) {
 	    this.org_yksused = param;
 	}
+    final String minuNimi(){
+    //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
+	return "admin";
+    }
+
+	
+    Date maxDate(){
+     	
+     	Calendar rightNow = Calendar.getInstance();
+     	rightNow.set(Calendar.YEAR, 9999);
+     	rightNow.set(Calendar.MONTH, 11);
+     	rightNow.set(Calendar.DAY_OF_MONTH, 31);
+     
+     	return rightNow.getTime();
+     }
 }
+   

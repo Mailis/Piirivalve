@@ -1,5 +1,9 @@
-<div xmlns:spring="http://www.springframework.org/tags" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+<div xmlns:spring="http://www.springframework.org/tags" 
+	 xmlns:fn="http://java.sun.com/jsp/jstl/functions" 
+	 xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+	 xmlns:c="http://java.sun.com/jsp/jstl/core" 
+	 xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	  <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
   <spring:message code="security_login_title" var="title" htmlEscape="false" />
   <util:panel id="title" title="${title}">
@@ -50,8 +54,7 @@
       <div>
       <h3> admin parool on Aiwei7ya </h3>
       <h3> valvur parool on valvur </h3>
-      <h3> ylem parool on ylem </h3>
-      <h3> user parool on user </h3>
+      <h3> ylem parool on ylem </h3> 
       </div>
       <div class="submit">
         <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>

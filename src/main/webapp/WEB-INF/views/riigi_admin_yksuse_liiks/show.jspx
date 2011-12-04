@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_piirivalve_entities_Riigi_admin_yksuse_liik" object="${riigi_admin_yksuse_liik}" path="/riigi_admin_yksuse_liiks" z="mWDhDGxzG3iJuM1A28npuOlBVu8=">
@@ -10,9 +10,9 @@
         <field:display field="sulgeja" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_sulgeja" object="${riigi_admin_yksuse_liik}" z="V7daPvM/e/wxKucqaRwU8GM7LFo="/>
         <field:display date="true" dateTimePattern="${riigi_admin_yksuse_liik_suletud_date_format}" field="suletud" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_suletud" object="${riigi_admin_yksuse_liik}" z="dNy0McgXsvCe9mbbsdIM6oToNho="/>
         <field:display field="kood" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kood" object="${riigi_admin_yksuse_liik}" z="EquahymcYeL1Gil879G7DZSmxl4="/>
-        <field:display field="nimetus" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_nimetus" object="${riigi_admin_yksuse_liik}" z="QHkRL1cRMLpo7nGiImnxzmfoO6M="/>
         <field:display field="kommentaar" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kommentaar" object="${riigi_admin_yksuse_liik}" z="ZcFF881s/Vlp+lZFUg/q8gq3mwQ="/>
         <field:display date="true" dateTimePattern="${riigi_admin_yksuse_liik_alates_date_format}" field="alates" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_alates" object="${riigi_admin_yksuse_liik}" z="vGxNADN/8JzKqrpKm/Cw8iJ0B34="/>
         <field:display date="true" dateTimePattern="${riigi_admin_yksuse_liik_kuni_date_format}" field="kuni" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kuni" object="${riigi_admin_yksuse_liik}" z="HoklwuzSUl2bsc0wG1ju4MEN8y4="/>
+        <field:display field="nimetus" id="s_ee_piirivalve_entities_Riigi_admin_yksuse_liik_nimetus" object="${riigi_admin_yksuse_liik}" z="QHkRL1cRMLpo7nGiImnxzmfoO6M="/>
     </page:show>
 </div>

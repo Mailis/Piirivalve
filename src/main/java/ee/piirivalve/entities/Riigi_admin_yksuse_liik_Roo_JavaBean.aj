@@ -29,10 +29,6 @@ privileged aspect Riigi_admin_yksuse_liik_Roo_JavaBean {
         return this.avatud;
     }
     
-    public void Riigi_admin_yksuse_liik.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
     public String Riigi_admin_yksuse_liik.getMuutja() {
         return this.muutja;
     }
@@ -45,10 +41,6 @@ privileged aspect Riigi_admin_yksuse_liik_Roo_JavaBean {
         return this.muudetud;
     }
     
-    public void Riigi_admin_yksuse_liik.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
     public String Riigi_admin_yksuse_liik.getSulgeja() {
         return this.sulgeja;
     }
@@ -59,10 +51,6 @@ privileged aspect Riigi_admin_yksuse_liik_Roo_JavaBean {
     
     public Date Riigi_admin_yksuse_liik.getSuletud() {
         return this.suletud;
-    }
-    
-    public void Riigi_admin_yksuse_liik.setSuletud(Date suletud) {
-        this.suletud = suletud;
     }
     
     public String Riigi_admin_yksuse_liik.getKood() {

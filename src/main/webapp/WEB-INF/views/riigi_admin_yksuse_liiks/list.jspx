@@ -7,8 +7,8 @@
             <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_riigi_admin_yksused" property="riigi_admin_yksused" z="a+ti+eZ/kiH7pXZh5kIyLYZN4A0="/>
             <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_voimalikudAlluvused_1" property="voimalikudAlluvused_1" z="u3dQFp6yNDMCVu9nP8mfufiaD10="/>
             <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_voimalikudAlluvused_2" property="voimalikudAlluvused_2" z="s83Ztz56l5SNB3evlCDj7BPga1U="/>
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_avaja" property="avaja" z="XNm/3/OMFRHINKPRoDvIyVxelNQ="/>
             <table:column date="true" dateTimePattern="${riigi_admin_yksuse_liik_avatud_date_format}" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_avatud" property="avatud" z="IiUFyvscO2yERR3mgEJ6eHY6LUs="/>
+            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_avaja" property="avaja" z="XNm/3/OMFRHINKPRoDvIyVxelNQ="/>
             <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_muutja" property="muutja" z="F+XJUx1x6WI6pTCRxuOP9q+un80="/>
         </table:table>
     </page:list>

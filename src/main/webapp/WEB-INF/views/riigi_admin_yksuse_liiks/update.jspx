@@ -13,9 +13,9 @@
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_sulgeja" z="dHdYqiCO+sU76CoFIjdnr9rH+rw="/>
         <field:datetime dateTimePattern="${riigi_admin_yksuse_liik_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_suletud" required="true" z="tio2ZlX7hRZ6PYiSEtGo/ol+EeU="/>
         <field:input field="kood" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kood" max="10" required="true" z="K0NTDrpSSAuzXwxUteU/fLkz6bM="/>
-        <field:textarea field="nimetus" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_nimetus" required="true" z="LkMyISBKCacxuQLlw55RWttfSq4="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kommentaar" z="Xa2bTIbRGi+k8YXM1RVGOVnvlYg="/>
         <field:datetime dateTimePattern="${riigi_admin_yksuse_liik_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_alates" required="true" z="2EDRw/3tB460zLfWV1WQT1tdbcI="/>
         <field:datetime dateTimePattern="${riigi_admin_yksuse_liik_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kuni" required="true" z="CDxFM3o6bbcXwapsOb6z3zU4JuE="/>
+        <field:textarea field="nimetus" id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_nimetus" required="true" z="LkMyISBKCacxuQLlw55RWttfSq4="/>
     </form:update>
 </div>

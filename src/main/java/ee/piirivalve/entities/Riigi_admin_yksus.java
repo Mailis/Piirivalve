@@ -3,8 +3,13 @@ package ee.piirivalve.entities;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import java.util.Calendar;
 import java.util.Date; 
 
 import javax.persistence.Entity;
@@ -33,7 +38,7 @@ public class Riigi_admin_yksus {
 
     @NotNull
     @Size(max = 32)
-    private String avaja;
+    private String avaja = minuNimi();// = logijaNimi()
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -42,7 +47,7 @@ public class Riigi_admin_yksus {
 
     @NotNull
     @Size(max = 32)
-    private String muutja;
+    private String muutja = minuNimi();// = logijaNimi()
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -50,12 +55,12 @@ public class Riigi_admin_yksus {
     private Date muudetud;
 
     @Size(max = 32)
-    private String sulgeja;
+    private String sulgeja;// = logijaNimi()
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date suletud;
+    private Date suletud = maxDate();//= maxDate();
 
     @NotNull
     @Size(max = 20)
@@ -131,4 +136,38 @@ public class Riigi_admin_yksus {
 	public void setRuumiyksused(Set<Ruumiyksus> param) {
 	    this.ruumiyksused = param;
 	}
+	
+	//Date 
+    public void setAvatud(Date avatud) {
+        this.avatud = new Date();
+    }     
+    public void setMuudetud(Date muudetud) {
+        this.muudetud = new Date();
+    }  
+    public void setSuletud(Date suletud) {
+        this.suletud = suletud;
+    }
+    
+    
+   Date maxDate(){
+    	
+    	Calendar rightNow = Calendar.getInstance();
+    	rightNow.set(Calendar.YEAR, 9999);
+    	rightNow.set(Calendar.MONTH, 11);
+    	rightNow.set(Calendar.DAY_OF_MONTH, 31);
+    
+    	return rightNow.getTime();
+    } 
+   
+   
+/*  //Logger
+    public String logijaNimi(){
+    	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+        return userName;
+    }*/
+    final String minuNimi(){
+        //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
+    	return "admin";
+        }
 }

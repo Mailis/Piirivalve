@@ -26,25 +26,6 @@ import org.springframework.web.util.WebUtils;
 
 privileged aspect Voimalik_alluvusController_Roo_Controller {
     
-    @RequestMapping(method = RequestMethod.POST)
-    public String Voimalik_alluvusController.create(@Valid Voimalik_alluvus voimalik_alluvus, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
-        if (bindingResult.hasErrors()) {
-            uiModel.addAttribute("voimalik_alluvus", voimalik_alluvus);
-            addDateTimeFormatPatterns(uiModel);
-            return "voimalik_alluvuses/create";
-        }
-        uiModel.asMap().clear();
-        voimalik_alluvus.persist();
-        return "redirect:/voimalik_alluvuses/" + encodeUrlPathSegment(voimalik_alluvus.getId().toString(), httpServletRequest);
-    }
-    
-    @RequestMapping(params = "form", method = RequestMethod.GET)
-    public String Voimalik_alluvusController.createForm(Model uiModel) {
-        uiModel.addAttribute("voimalik_alluvus", new Voimalik_alluvus());
-        addDateTimeFormatPatterns(uiModel);
-        return "voimalik_alluvuses/create";
-    }
-    
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String Voimalik_alluvusController.show(@PathVariable("id") Long id, Model uiModel) {
         addDateTimeFormatPatterns(uiModel);
@@ -67,25 +48,8 @@ privileged aspect Voimalik_alluvusController_Roo_Controller {
         return "voimalik_alluvuses/list";
     }
     
-    @RequestMapping(method = RequestMethod.PUT)
-    public String Voimalik_alluvusController.update(@Valid Voimalik_alluvus voimalik_alluvus, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
-        if (bindingResult.hasErrors()) {
-            uiModel.addAttribute("voimalik_alluvus", voimalik_alluvus);
-            addDateTimeFormatPatterns(uiModel);
-            return "voimalik_alluvuses/update";
-        }
-        uiModel.asMap().clear();
-        voimalik_alluvus.merge();
-        return "redirect:/voimalik_alluvuses/" + encodeUrlPathSegment(voimalik_alluvus.getId().toString(), httpServletRequest);
-    }
-    
-    @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
-    public String Voimalik_alluvusController.updateForm(@PathVariable("id") Long id, Model uiModel) {
-        uiModel.addAttribute("voimalik_alluvus", Voimalik_alluvus.findVoimalik_alluvus(id));
-        addDateTimeFormatPatterns(uiModel);
-        return "voimalik_alluvuses/update";
-    }
-    
+
+   
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public String Voimalik_alluvusController.delete(@PathVariable("id") Long id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         Voimalik_alluvus.findVoimalik_alluvus(id).remove();

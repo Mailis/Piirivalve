@@ -29,10 +29,6 @@ privileged aspect Voimalik_alluvus_Roo_JavaBean {
         return this.avatud;
     }
     
-    public void Voimalik_alluvus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
     public String Voimalik_alluvus.getMuutja() {
         return this.muutja;
     }
@@ -45,10 +41,6 @@ privileged aspect Voimalik_alluvus_Roo_JavaBean {
         return this.muudetud;
     }
     
-    public void Voimalik_alluvus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
     public String Voimalik_alluvus.getSulgeja() {
         return this.sulgeja;
     }
@@ -59,10 +51,6 @@ privileged aspect Voimalik_alluvus_Roo_JavaBean {
     
     public Date Voimalik_alluvus.getSuletud() {
         return this.suletud;
-    }
-    
-    public void Voimalik_alluvus.setSuletud(Date suletud) {
-        this.suletud = suletud;
     }
     
     public String Voimalik_alluvus.getKommentaar() {

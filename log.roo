@@ -145,3 +145,21 @@ web mvc controller --class ee.piirivalve.web.RegioonilisamineController
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-26 14:55:29
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-26 15:40:26
 security setup
+finder add --class ~.web.RegioonilisamineController --finderName regiooniliik 
+web mvc scaffold --class ~.web.RegioonilisamineController --backingType ~.entities.Riigi_admin_yksuse_liik 
+web mvc scaffold --class ~.entities.Riigi_admin_yksuse_liik --backingType  ~.web.RegioonilisamineController
+finder add --finderName regiooniliigid --class ~.entities.Riigi_admin_yksuse_liik 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-27 19:14:02
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-27 20:45:40
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-30 16:55:36
+persistence setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-30 17:00:27
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-01 16:40:37
+web mvc controller --class ~.web.AdminYksuseLiigiRedaktor
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-03 03:02:07
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-03 14:27:04
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-03 21:09:29
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-04 00:21:38
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-04 16:54:05
+web mvc language --code it
+web mvc install language --code it
