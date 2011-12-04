@@ -26,6 +26,7 @@
   <util:language label="English" locale="en"/>
   <util:language label="Eesti" locale="et"/>
     <util:language label="Italiano" locale="it"/>
+    <util:language label="Deutsch" locale="de"/>
     </span>
   <util:theme/>
 

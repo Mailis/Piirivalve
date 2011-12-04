@@ -1,122 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
-	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
-	xmlns:form="urn:jsptagdir:/WEB-INF/tags/form"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	xmlns:spring="http://www.springframework.org/tags"
-	xmlns:springform="http://www.springframework.org/tags/form"
-	version="2.0">
-	<jsp:directive.page contentType="text/html;charset=UTF-8" />
-	<jsp:output omit-xml-declaration="yes" />
-	<c:choose>
-		<c:when test="${!empty valitudLiik}">
-			<form:create id="fc_ee_piirivalve_entities_Voimalik_alluvus"
-				modelAttribute="voimalik_alluvus" path="/voimalik_alluvuses"
-				render="${empty dependencies}" z="ZLZEVWIB1IOg8Rh6Dq0Qvi8KN/0=">
-				<div style="float: left;">
-					<H3>vali administratiivyksuse liigile</H3>
-					<H2>
-						<c:out value="${valitudLiik.nimetus}" />
-						<field:select label=" " itemLabel="nimetus"
-							field="riigi_admin_yksuse_liik"
-							id="c_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik"
-							itemValue="id" items="${riigi_admin_yksuse_liiks}"
-							path="/riigi_admin_yksuse_liiks" z="I+AzB8kxdw3JD/9Bgdmr/x2lXTM=" />
-
-					</H2>
-					<H3>
-						<field:select field="voimalik_alluv_liik"
-							id="c_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik"
-							itemLabel="nimetus" itemValue="id"
-							items="${riigi_admin_yksuse_liiks}" label="alluvad liigid"
-							path="/riigi_admin_yksuse_liiks" />
-					</H3>
-					<field:textarea field="avaja"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja"
-						render="false" required="true" z="user-managed" />
-					<field:datetime
-						dateTimePattern="${voimalik_alluvus_avatud_date_format}"
-						field="avatud"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud"
-						render="false" required="true" z="user-managed" />
-					<field:textarea field="muutja"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja"
-						render="false" required="true" z="user-managed" />
-					<field:datetime
-						dateTimePattern="${voimalik_alluvus_muudetud_date_format}"
-						field="muudetud"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud"
-						render="false" required="true" z="user-managed" />
-					<field:textarea field="sulgeja"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_sulgeja"
-						render="false" z="user-managed" />
-					<field:datetime
-						dateTimePattern="${voimalik_alluvus_suletud_date_format}"
-						field="suletud"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_suletud"
-						render="false" required="true" z="user-managed" />
-					<field:textarea field="kommentaar"
-						id="c_ee_piirivalve_entities_Voimalik_alluvus_kommentaar"
-						z="user-managed" />
-				</div>					
-<!-- nÃ¤itab olemasolevaid alluvusi -->
-				<div style="float: left; margin-left: 30px;">
-					<c:choose>
-						<c:when test="${!empty alluvadAdminYksysed}">
-							<h3>
-								<c:out value="olemasolevad alluvad:" />
-							</h3>
-							<c:forEach items="${alluvadAdminYksysed}" var="alluvad">
-								<ul>
-									<li><c:out value="${alluvad.nimetus}" /></li>
-								</ul>
-							</c:forEach>
-						</c:when>
-						<c:otherwise>
-							<H3>
-								<c:out value="alluvaid pole veel mÃ¤Ã¤ratud" />
-							</H3>
-						</c:otherwise>
-					</c:choose>
-				</div>
-				
-			<div style="clear: both;" />	
-	
-				
-				
-			</form:create>
-			<form:dependency dependencies="${dependencies}"
-				id="d_ee_piirivalve_entities_Voimalik_alluvus"
-				render="${not empty dependencies}" z="xE20fIvcJwIgpemobLi556p9H9c=" />
-				
-				
-		</c:when>
-		<c:otherwise>
-			<H3>
-				<c:out value="liiki pole valitud" />
-			</H3>
-		</c:otherwise>
-	</c:choose>
-	
-
-			<!-- LOOBU -->
-		<div  class="submit" style="float:left; margin-left:90px; margin-bottom:40px;" >				<!-- deployd resourcers > webapp > styles-->
-						<!-- styleSheet=resources/styles/alt.css -->
-						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp Ã¤rra koritatud ja siia toodud, 
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:springform="http://www.springframework.org/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <c:choose>
+        <c:when test="${!empty valitudLiik}">
+            <form:create id="fc_ee_piirivalve_entities_Voimalik_alluvus" modelAttribute="voimalik_alluvus" path="/voimalik_alluvuses" render="${empty dependencies}" z="ZLZEVWIB1IOg8Rh6Dq0Qvi8KN/0=">
+                <div style="float: left;">
+                    <H3>vali administratiivyksuse liigile</H3>
+                    <H2>
+                        <c:out value="${valitudLiik.nimetus}"/>
+                        <field:select field="riigi_admin_yksuse_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik" itemLabel="nimetus" itemValue="id" items="${riigi_admin_yksuse_liiks}" label=" " path="/riigi_admin_yksuse_liiks" z="user-managed"/>
+                    </H2>
+                    <H3>
+                        <field:select field="voimalik_alluv_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik" itemLabel="nimetus" itemValue="id" items="${riigi_admin_yksuse_liiks}" label="alluvad liigid" path="/riigi_admin_yksuse_liiks"/>
+                    </H3>
+                    <field:textarea field="avaja" id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja" render="false" required="true" z="user-managed"/>
+                    <field:datetime dateTimePattern="${voimalik_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud" render="false" required="true" z="user-managed"/>
+                    <field:textarea field="muutja" id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja" render="false" required="true" z="user-managed"/>
+                    <field:datetime dateTimePattern="${voimalik_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud" render="false" required="true" z="user-managed"/>
+                    <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Voimalik_alluvus_sulgeja" render="false" z="user-managed"/>
+                    <field:datetime dateTimePattern="${voimalik_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Voimalik_alluvus_suletud" render="false" required="true" z="user-managed"/>
+                    <field:textarea field="kommentaar" id="c_ee_piirivalve_entities_Voimalik_alluvus_kommentaar" z="user-managed"/>
+                </div>
+                <!-- näitab olemasolevaid alluvusi -->
+                <div style="float: left; margin-left: 30px;">
+                    <c:choose>
+                        <c:when test="${!empty alluvadAdminYksysed}">
+                            <h3>
+                                <c:out value="olemasolevad alluvad:"/>
+                            </h3>
+                            <c:forEach items="${alluvadAdminYksysed}" var="alluvad">
+                                <ul>
+                                    <li>
+                                        <c:out value="${alluvad.nimetus}"/>
+                                    </li>
+                                </ul>
+                            </c:forEach>
+                        </c:when>
+                        <c:otherwise>
+                            <H3>
+                                <c:out value="alluvaid pole veel määratud"/>
+                            </H3>
+                        </c:otherwise>
+                    </c:choose>
+                </div>
+                <div style="clear: both;"/>
+            </form:create>
+            <form:dependency dependencies="${dependencies}" id="d_ee_piirivalve_entities_Voimalik_alluvus" render="${not empty dependencies}" z="xE20fIvcJwIgpemobLi556p9H9c="/>
+        </c:when>
+        <c:otherwise>
+            <H3>
+                <c:out value="liiki pole valitud"/>
+            </H3>
+        </c:otherwise>
+    </c:choose>
+    <!-- LOOBU -->
+    <div class="submit" style="float:left; margin-left:90px; margin-bottom:40px;">
+        <!-- deployd resourcers > webapp > styles-->
+        <!-- styleSheet=resources/styles/alt.css -->
+        <!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp ärra koritatud ja siia toodud, 
                              et seda saak paigutada kuhuvaja -->
-                  <form action="http://localhost:8080/Piirivalve/adminyksuseliigiredaktor/index"  >      
-                 
-						<div class="lisaAlluvaid" id="${fn:escapeXml(id)}_submit">
-							<spring:message code="button_cancel" var="save_button"
-								htmlEscape="false" />
-							
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
-						</div>
-					
-				</form>  
-		</div>
-				
-				<div style="clear: both;" />
+        <form action="http://localhost:8080/Piirivalve/adminyksuseliigiredaktor/index">
+            <div class="lisaAlluvaid" id="${fn:escapeXml(id)}_submit">
+                <spring:message code="button_cancel" htmlEscape="false" var="save_button"/>
+                <input id="proceed" type="submit" value="${fn:escapeXml(save_button)}"/>
+            </div>
+        </form>
+    </div>
+    <div style="clear: both;"/>
 </div>
