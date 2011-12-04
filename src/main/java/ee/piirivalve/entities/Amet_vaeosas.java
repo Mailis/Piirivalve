@@ -1,23 +1,16 @@
 package ee.piirivalve.entities;
 
-import java.util.Calendar;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import ee.piirivalve.entities.Vaeosa;
 import javax.persistence.ManyToOne;
@@ -26,36 +19,7 @@ import javax.persistence.ManyToOne;
 @RooToString
 @RooEntity
 @Entity
-public class Amet_vaeosas {
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-    @NotNull
-    @Size(max = 32)
-    private String avaja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date avatud;
-
-    @NotNull
-    @Size(max = 32)
-    private String muutja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date muudetud;
-
-    @Size(max = 32)
-    private String sulgeja;
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date suletud = maxDate();
+public class Amet_vaeosas extends BaseEntity{
 
     private String kommentaar;
 
@@ -79,17 +43,4 @@ public class Amet_vaeosas {
 	public void setVaeosa(Vaeosa param) {
 	    this.vaeosa = param;
 	}
-    final String minuNimi(){
-    //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
-	return "admin";
-    }
-   Date maxDate(){
-    	
-    	Calendar rightNow = Calendar.getInstance();
-    	rightNow.set(Calendar.YEAR, 9999);
-    	rightNow.set(Calendar.MONTH, 11);
-    	rightNow.set(Calendar.DAY_OF_MONTH, 31);
-    
-    	return rightNow.getTime();
-    }
 }

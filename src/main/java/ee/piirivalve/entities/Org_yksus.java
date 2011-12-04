@@ -3,21 +3,15 @@ package ee.piirivalve.entities;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import java.util.Calendar;
 import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id; 
 import org.springframework.format.annotation.DateTimeFormat;
 import ee.piirivalve.entities.Vaeosa;
 import ee.piirivalve.entities.Org_yksus;
@@ -29,37 +23,8 @@ import javax.persistence.OneToMany;
 @RooToString
 @RooEntity
 @Entity
-public class Org_yksus {
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-    @NotNull
-    @Size(max = 32)
-    private String avaja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date avatud;
-
-    @NotNull
-    @Size(max = 32)
-    private String muutja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date muudetud;
-
-    @Size(max = 32)
-    private String sulgeja;
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date suletud = maxDate();
-
+public class Org_yksus extends BaseEntity{
+	
     @NotNull
     @Size(max = 20)
     private String kood;
@@ -112,20 +77,5 @@ public class Org_yksus {
 	public void setOrg_yksused(Set<Org_yksus> param) {
 	    this.org_yksused = param;
 	}
-    final String minuNimi(){
-    //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
-	return "admin";
-    }
-
-	
-    Date maxDate(){
-     	
-     	Calendar rightNow = Calendar.getInstance();
-     	rightNow.set(Calendar.YEAR, 9999);
-     	rightNow.set(Calendar.MONTH, 11);
-     	rightNow.set(Calendar.DAY_OF_MONTH, 31);
-     
-     	return rightNow.getTime();
-     }
 }
    

@@ -4,20 +4,12 @@ import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import java.util.Calendar;
 import java.util.Date; 
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PrePersist;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
  
@@ -31,37 +23,7 @@ import ee.piirivalve.entities.Voimalik_alluvus;
 @RooToString
 @RooEntity
 @Entity
-public class Riigi_admin_yksuse_liik {
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-	
-    @NotNull
-    @Size(max = 32)
-    private String avaja = minuNimi();// =  = sisseloginu()
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date avatud = new Date();;
-
-	@NotNull
-    @Size(max = 32)
-    private String muutja = minuNimi();// = sisseloginu();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date muudetud = new Date();
-
-    @Size(max = 32)
-    private String sulgeja;// = sisseloginu();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date suletud = maxDate();// = maxDate ();
+public class Riigi_admin_yksuse_liik extends BaseEntity{
 
     @NotNull
     @Size(max = 10)
@@ -115,56 +77,4 @@ public class Riigi_admin_yksuse_liik {
 	public void setVoimalikudAlluvused_2(Set<Voimalik_alluvus> param) {
 	    this.voimalikudAlluvused_2 = param;
 	}
-
-//Date 
-    public void setAvatud(Date avatud) {
-        this.avatud = new Date();
-    }     
-    public void setMuudetud(Date muudetud) {
-        this.muudetud = new Date();
-    }  
-    public void setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
-    /*    
-    @PrePersist
-    public void setAvaja(String avaja) {
-        this.avaja = sisseloginu();
-    }
-    @PrePersist
-    String sisseloginu(){
-    	//final String userName = SecurityContextHolder.getContext().getAuthentication().getName();
-    	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String userName = auth.getName();
-    	return userName;
-    }
-    
-    public String sisseloginu(){
-    	//final String userName = SecurityContextHolder.getContext().getAuthentication().getName();
-    	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        final String userName = auth.getName();
-    	return userName;
-    }
-*/  
-    final String minuNimi(){
-    //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
-	return "admin";
-    }
-    
-    
-	Date maxDate(){
-    	
-    	Calendar rightNow = Calendar.getInstance();
-//      rightNow.set(9999, 12, 31);
-//    	Date myDate = rightNow.getTime();///annb tulemuseks 31.01.10000
-    	
-    	rightNow.set(Calendar.YEAR, 9999);
-    	rightNow.set(Calendar.MONTH, 11);
-    	rightNow.set(Calendar.DAY_OF_MONTH, 31);
-    
-    	return rightNow.getTime();
-    }    	
-    	
-
-    
 }
