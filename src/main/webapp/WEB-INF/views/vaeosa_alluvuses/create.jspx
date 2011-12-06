@@ -3,12 +3,12 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_piirivalve_entities_Vaeosa_alluvus" modelAttribute="vaeosa_alluvus" path="/vaeosa_alluvuses" render="${empty dependencies}" z="7fBaOOvKKKBKkvuuDQ2G8YqsTRU=">
-        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Vaeosa_alluvus_avaja" required="true" z="1lHClYTr9dbO99YLyRN8LTQ6B/E="/>
-        <field:datetime dateTimePattern="${vaeosa_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_avatud" required="true" z="AjvbO+esjZ49f2u2biBvwqfJM6o="/>
-        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Vaeosa_alluvus_muutja" required="true" z="/CWa1jAjdEP9bxWTx3s43T5hxAw="/>
-        <field:datetime dateTimePattern="${vaeosa_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_muudetud" required="true" z="DG3U39cV0FNvfZHlIca6Um7Rs9I="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Vaeosa_alluvus_avaja" z="EBrw/nwTPRJLiYKJb/42asP6EUM="/>
+        <field:datetime dateTimePattern="${vaeosa_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_avatud" z="/fr9XIs0RHkj9c0gMisbk4L04HQ="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Vaeosa_alluvus_muutja" z="zgIGYCWskbpaNlA/pvHd7FNG6EU="/>
+        <field:datetime dateTimePattern="${vaeosa_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_muudetud" z="TMedeL0Eu49/KM54wAUzzeWWQIU="/>
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Vaeosa_alluvus_sulgeja" z="wX2AC2IpA17YxW3WMz7PSFej9u4="/>
-        <field:datetime dateTimePattern="${vaeosa_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_suletud" required="true" z="RjUwSsqjARCjachz0eWlqxmo8Tk="/>
+        <field:datetime dateTimePattern="${vaeosa_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Vaeosa_alluvus_suletud" z="C3cgVr1RC4Tsyh2cKm7CbzV9SR0="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Vaeosa_alluvus_kommentaar" z="oVRp/PtLYCLtQA7DQbutAlDn+Ho="/>
         <field:datetime dateTimePattern="${vaeosa_alluvus_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Vaeosa_alluvus_alates" required="true" z="FsNHrgUeFravsuCd3zwBuRIa4ks="/>
         <field:datetime dateTimePattern="${vaeosa_alluvus_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Vaeosa_alluvus_kuni" required="true" z="HjfhnoehwFvfsJ+X2gP+NC7gE24="/>

@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Admin_alluvus_Roo_JavaBean {
-    
-    public Long Admin_alluvus.getId() {
-        return this.id;
-    }
-    
-    public void Admin_alluvus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Admin_alluvus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Admin_alluvus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Admin_alluvus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Admin_alluvus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Admin_alluvus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Admin_alluvus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Admin_alluvus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Admin_alluvus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Admin_alluvus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Admin_alluvus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Admin_alluvus.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Admin_alluvus.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Admin_alluvus.getKommentaar() {
         return this.kommentaar;

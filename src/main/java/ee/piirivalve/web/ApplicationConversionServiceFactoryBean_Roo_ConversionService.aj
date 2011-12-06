@@ -43,84 +43,84 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Admin_alluvusConverter implements Converter<Admin_alluvus, String> {
         public String convert(Admin_alluvus admin_alluvus) {
-            return new StringBuilder().append(admin_alluvus.getAvaja()).append(" ").append(admin_alluvus.getAvatud()).append(" ").append(admin_alluvus.getMuutja()).append(" ").append(admin_alluvus.getMuudetud()).toString();
+            return new StringBuilder().append(admin_alluvus.getMuudetud()).append(" ").append(admin_alluvus.getMuutja()).append(" ").append(admin_alluvus.getAvaja()).append(" ").append(admin_alluvus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Amet_vaeosasConverter implements Converter<Amet_vaeosas, String> {
         public String convert(Amet_vaeosas amet_vaeosas) {
-            return new StringBuilder().append(amet_vaeosas.getAvaja()).append(" ").append(amet_vaeosas.getAvatud()).append(" ").append(amet_vaeosas.getMuutja()).append(" ").append(amet_vaeosas.getMuudetud()).toString();
+            return new StringBuilder().append(amet_vaeosas.getMuudetud()).append(" ").append(amet_vaeosas.getMuutja()).append(" ").append(amet_vaeosas.getAvaja()).append(" ").append(amet_vaeosas.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Org_yksusConverter implements Converter<Org_yksus, String> {
         public String convert(Org_yksus org_yksus) {
-            return new StringBuilder().append(org_yksus.getAvaja()).append(" ").append(org_yksus.getAvatud()).append(" ").append(org_yksus.getMuutja()).append(" ").append(org_yksus.getMuudetud()).toString();
+            return new StringBuilder().append(org_yksus.getMuudetud()).append(" ").append(org_yksus.getMuutja()).append(" ").append(org_yksus.getAvaja()).append(" ").append(org_yksus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Piiriloigu_haldajaConverter implements Converter<Piiriloigu_haldaja, String> {
         public String convert(Piiriloigu_haldaja piiriloigu_haldaja) {
-            return new StringBuilder().append(piiriloigu_haldaja.getAvaja()).append(" ").append(piiriloigu_haldaja.getAvatud()).append(" ").append(piiriloigu_haldaja.getMuutja()).append(" ").append(piiriloigu_haldaja.getMuudetud()).toString();
+            return new StringBuilder().append(piiriloigu_haldaja.getMuudetud()).append(" ").append(piiriloigu_haldaja.getMuutja()).append(" ").append(piiriloigu_haldaja.getAvaja()).append(" ").append(piiriloigu_haldaja.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Piiripunkti_alluvusConverter implements Converter<Piiripunkti_alluvus, String> {
         public String convert(Piiripunkti_alluvus piiripunkti_alluvus) {
-            return new StringBuilder().append(piiripunkti_alluvus.getAvaja()).append(" ").append(piiripunkti_alluvus.getAvatud()).append(" ").append(piiripunkti_alluvus.getMuutja()).append(" ").append(piiripunkti_alluvus.getMuudetud()).toString();
+            return new StringBuilder().append(piiripunkti_alluvus.getMuudetud()).append(" ").append(piiripunkti_alluvus.getMuutja()).append(" ").append(piiripunkti_alluvus.getAvaja()).append(" ").append(piiripunkti_alluvus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Riigi_admin_yksusConverter implements Converter<Riigi_admin_yksus, String> {
         public String convert(Riigi_admin_yksus riigi_admin_yksus) {
-            return new StringBuilder().append(riigi_admin_yksus.getAvaja()).append(" ").append(riigi_admin_yksus.getAvatud()).append(" ").append(riigi_admin_yksus.getMuutja()).append(" ").append(riigi_admin_yksus.getMuudetud()).toString();
+            return new StringBuilder().append(riigi_admin_yksus.getMuudetud()).append(" ").append(riigi_admin_yksus.getMuutja()).append(" ").append(riigi_admin_yksus.getAvaja()).append(" ").append(riigi_admin_yksus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Riigi_admin_yksuse_liikConverter implements Converter<Riigi_admin_yksuse_liik, String> {
         public String convert(Riigi_admin_yksuse_liik riigi_admin_yksuse_liik) {
-            return new StringBuilder().append(riigi_admin_yksuse_liik.getAvaja()).append(" ").append(riigi_admin_yksuse_liik.getAvatud()).append(" ").append(riigi_admin_yksuse_liik.getMuutja()).append(" ").append(riigi_admin_yksuse_liik.getMuudetud()).toString();
+            return new StringBuilder().append(riigi_admin_yksuse_liik.getMuudetud()).append(" ").append(riigi_admin_yksuse_liik.getMuutja()).append(" ").append(riigi_admin_yksuse_liik.getAvaja()).append(" ").append(riigi_admin_yksuse_liik.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.RuumiyksusConverter implements Converter<Ruumiyksus, String> {
         public String convert(Ruumiyksus ruumiyksus) {
-            return new StringBuilder().append(ruumiyksus.getAvaja()).append(" ").append(ruumiyksus.getAvatud()).append(" ").append(ruumiyksus.getMuutja()).append(" ").append(ruumiyksus.getMuudetud()).toString();
+            return new StringBuilder().append(ruumiyksus.getMuudetud()).append(" ").append(ruumiyksus.getMuutja()).append(" ").append(ruumiyksus.getAvaja()).append(" ").append(ruumiyksus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.VaeosaConverter implements Converter<Vaeosa, String> {
         public String convert(Vaeosa vaeosa) {
-            return new StringBuilder().append(vaeosa.getAvaja()).append(" ").append(vaeosa.getAvatud()).append(" ").append(vaeosa.getMuutja()).append(" ").append(vaeosa.getMuudetud()).toString();
+            return new StringBuilder().append(vaeosa.getMuudetud()).append(" ").append(vaeosa.getMuutja()).append(" ").append(vaeosa.getAvaja()).append(" ").append(vaeosa.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Vaeosa_alluvusConverter implements Converter<Vaeosa_alluvus, String> {
         public String convert(Vaeosa_alluvus vaeosa_alluvus) {
-            return new StringBuilder().append(vaeosa_alluvus.getAvaja()).append(" ").append(vaeosa_alluvus.getAvatud()).append(" ").append(vaeosa_alluvus.getMuutja()).append(" ").append(vaeosa_alluvus.getMuudetud()).toString();
+            return new StringBuilder().append(vaeosa_alluvus.getMuudetud()).append(" ").append(vaeosa_alluvus.getMuutja()).append(" ").append(vaeosa_alluvus.getAvaja()).append(" ").append(vaeosa_alluvus.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.VahtkondConverter implements Converter<Vahtkond, String> {
         public String convert(Vahtkond vahtkond) {
-            return new StringBuilder().append(vahtkond.getAvaja()).append(" ").append(vahtkond.getAvatud()).append(" ").append(vahtkond.getMuutja()).append(" ").append(vahtkond.getMuudetud()).toString();
+            return new StringBuilder().append(vahtkond.getMuudetud()).append(" ").append(vahtkond.getMuutja()).append(" ").append(vahtkond.getAvaja()).append(" ").append(vahtkond.getAvatud()).toString();
         }
         
     }
     
     static class ee.piirivalve.web.ApplicationConversionServiceFactoryBean.Voimalik_alluvusConverter implements Converter<Voimalik_alluvus, String> {
         public String convert(Voimalik_alluvus voimalik_alluvus) {
-            return new StringBuilder().append(voimalik_alluvus.getAvaja()).append(" ").append(voimalik_alluvus.getAvatud()).append(" ").append(voimalik_alluvus.getMuutja()).append(" ").append(voimalik_alluvus.getMuudetud()).toString();
+            return new StringBuilder().append(voimalik_alluvus.getMuudetud()).append(" ").append(voimalik_alluvus.getMuutja()).append(" ").append(voimalik_alluvus.getAvaja()).append(" ").append(voimalik_alluvus.getAvatud()).toString();
         }
         
     }

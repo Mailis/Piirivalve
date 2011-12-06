@@ -3,55 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Riigi_admin_yksus_Roo_JavaBean {
-    
-    public Long Riigi_admin_yksus.getId() {
-        return this.id;
-    }
-    
-    public void Riigi_admin_yksus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Riigi_admin_yksus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Riigi_admin_yksus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Riigi_admin_yksus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public String Riigi_admin_yksus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Riigi_admin_yksus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Riigi_admin_yksus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public String Riigi_admin_yksus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Riigi_admin_yksus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Riigi_admin_yksus.getSuletud() {
-        return this.suletud;
-    }
     
     public String Riigi_admin_yksus.getKood() {
         return this.kood;

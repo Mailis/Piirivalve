@@ -106,8 +106,8 @@ privileged aspect Piiripunkti_alluvusController_Roo_Controller {
     }
     
     void Piiripunkti_alluvusController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("piiripunkti_alluvus_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piiripunkti_alluvus_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("piiripunkti_alluvus_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piiripunkti_alluvus_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piiripunkti_alluvus_alates_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piiripunkti_alluvus_kuni_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));

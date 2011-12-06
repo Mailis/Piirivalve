@@ -4,74 +4,10 @@
 package ee.piirivalve.entities;
 
 import ee.piirivalve.entities.Admin_alluvus;
-import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Version;
-import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect Admin_alluvus_Roo_Entity {
-    
-    @PersistenceContext
-    transient EntityManager Admin_alluvus.entityManager;
-    
-    @Version
-    @Column(name = "version")
-    private Integer Admin_alluvus.version;
-    
-    public Integer Admin_alluvus.getVersion() {
-        return this.version;
-    }
-    
-    public void Admin_alluvus.setVersion(Integer version) {
-        this.version = version;
-    }
-    
-    @Transactional
-    public void Admin_alluvus.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void Admin_alluvus.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            Admin_alluvus attached = Admin_alluvus.findAdmin_alluvus(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void Admin_alluvus.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void Admin_alluvus.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
-    }
-    
-    @Transactional
-    public Admin_alluvus Admin_alluvus.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        Admin_alluvus merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
-    }
-    
-    public static final EntityManager Admin_alluvus.entityManager() {
-        EntityManager em = new Admin_alluvus().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
     
     public static long Admin_alluvus.countAdmin_alluvuses() {
         return entityManager().createQuery("SELECT COUNT(o) FROM Admin_alluvus o", Long.class).getSingleResult();

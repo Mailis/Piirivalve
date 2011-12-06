@@ -3,55 +3,9 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
-import java.util.Date;
 
 privileged aspect Voimalik_alluvus_Roo_JavaBean {
-    
-    public Long Voimalik_alluvus.getId() {
-        return this.id;
-    }
-    
-    public void Voimalik_alluvus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Voimalik_alluvus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Voimalik_alluvus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Voimalik_alluvus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public String Voimalik_alluvus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Voimalik_alluvus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Voimalik_alluvus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public String Voimalik_alluvus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Voimalik_alluvus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Voimalik_alluvus.getSuletud() {
-        return this.suletud;
-    }
     
     public String Voimalik_alluvus.getKommentaar() {
         return this.kommentaar;

@@ -100,7 +100,7 @@ public class AdminYksuseLiigiRedaktor {
     	
     }
     
-    //seda kasutatakse Allub: välja dropboxi jaoks
+    //seda kasutatakse Allub: va:lja dropboxi jaoks
     @ModelAttribute("riigi_admin_yksuse_liiks_piiks")
     public Collection<Riigi_admin_yksuse_liik> populateRiigi_admin_yksuse_liiks() {
         return Riigi_admin_yksuse_liik.findAllRiigi_admin_yksuse_liiks();

@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_piirivalve_entities_Amet_vaeosas" items="${amet_vaeosases}" z="pycAHEEjTfKJKfZX3+gCXJrrfTg=">
         <table:table data="${amet_vaeosases}" id="l_ee_piirivalve_entities_Amet_vaeosas" path="/amet_vaeosases" z="AdwCPjrg6aUSA8p++v4VQQCDYe4=">
-            <table:column id="c_ee_piirivalve_entities_Amet_vaeosas_vaeosa" property="vaeosa" z="3UALGNnM7rt2a8WbIDc/23SHhfE="/>
             <table:column id="c_ee_piirivalve_entities_Amet_vaeosas_avaja" property="avaja" z="8NbfUN260cRt6TSpX+zGkh3/tuU="/>
             <table:column date="true" dateTimePattern="${amet_vaeosas_avatud_date_format}" id="c_ee_piirivalve_entities_Amet_vaeosas_avatud" property="avatud" z="k62BgwA0+3l//m3WHXMbfVEnt+g="/>
             <table:column id="c_ee_piirivalve_entities_Amet_vaeosas_muutja" property="muutja" z="dZDd5xSvzayhlfVkac1YD5sYGNk="/>
             <table:column date="true" dateTimePattern="${amet_vaeosas_muudetud_date_format}" id="c_ee_piirivalve_entities_Amet_vaeosas_muudetud" property="muudetud" z="RH0Ix4CjwlhRW1CpfaWZZJOdtNY="/>
             <table:column id="c_ee_piirivalve_entities_Amet_vaeosas_sulgeja" property="sulgeja" z="VYUrnKifHBspZHlraiakxIoTafs="/>
+            <table:column date="true" dateTimePattern="${amet_vaeosas_suletud_date_format}" id="c_ee_piirivalve_entities_Amet_vaeosas_suletud" property="suletud" z="GftISWF3HvkgUVfnjdEIT1OQJwU="/>
         </table:table>
     </page:list>
 </div>

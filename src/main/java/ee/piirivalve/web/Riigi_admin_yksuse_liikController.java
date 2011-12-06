@@ -32,13 +32,14 @@ public class Riigi_admin_yksuse_liikController {
         }     	
               
     	Collection<Riigi_admin_yksuse_liik> coll = Riigi_admin_yksuse_liik.findAllRiigi_admin_yksuse_liiks();
+    	boolean notSuletud = true;
     	//kui siuke liik on baasis olemas ja ta pole suletud, 
     	//siis seda uuesti ei salvestata,
     	//vaid minnakse kohe alluvaid valima
     	for(Riigi_admin_yksuse_liik l : coll){ 
         	String l1 = l.getNimetus().toUpperCase();
         	String l2 = riigi_admin_yksuse_liik.getNimetus().toUpperCase();
-        	boolean notSuletud = (riigi_admin_yksuse_liik.getSuletud()).after(new Date());
+        	//notSuletud = (riigi_admin_yksuse_liik.getSuletud()).after(new Date());
 	    	if((l1.equals(l2)) && notSuletud ){ 
 	    		
 	    		return "redirect:/voimalik_alluvuses"+"?form&liigiID=" + l.getId();

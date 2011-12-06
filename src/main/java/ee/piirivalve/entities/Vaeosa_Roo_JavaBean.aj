@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Vaeosa_Roo_JavaBean {
-    
-    public Long Vaeosa.getId() {
-        return this.id;
-    }
-    
-    public void Vaeosa.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Vaeosa.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Vaeosa.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Vaeosa.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Vaeosa.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Vaeosa.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Vaeosa.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Vaeosa.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Vaeosa.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Vaeosa.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Vaeosa.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Vaeosa.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Vaeosa.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Vaeosa.getKood() {
         return this.kood;

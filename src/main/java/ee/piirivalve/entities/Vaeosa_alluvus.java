@@ -21,36 +21,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 @RooToString
 @RooEntity
 @Entity
-public class Vaeosa_alluvus {
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-    @NotNull
-    @Size(max = 32)
-    private String avaja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date avatud;
-
-    @NotNull
-    @Size(max = 32)
-    private String muutja = minuNimi();
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date muudetud;
-
-    @Size(max = 32)
-    private String sulgeja;
-
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date suletud= maxDate();
+public class Vaeosa_alluvus extends BaseEntity {
+	
 
     private String kommentaar;
 
@@ -63,21 +35,5 @@ public class Vaeosa_alluvus {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date kuni;
-    
-    final String minuNimi(){
-        //	return (SecurityContextHolder.getContext().getAuthentication().getPrincipal()).toString();
-    	return "admin";
-        }
-    
-
-	
-    Date maxDate(){
-     	
-     	Calendar rightNow = Calendar.getInstance();
-     	rightNow.set(Calendar.YEAR, 9999);
-     	rightNow.set(Calendar.MONTH, 11);
-     	rightNow.set(Calendar.DAY_OF_MONTH, 31);
-     
-     	return rightNow.getTime();
-     }
+ 
 }

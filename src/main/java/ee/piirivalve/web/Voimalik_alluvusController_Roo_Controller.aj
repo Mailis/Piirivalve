@@ -87,8 +87,8 @@ privileged aspect Voimalik_alluvusController_Roo_Controller {
     }
     
     void Voimalik_alluvusController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("voimalik_alluvus_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("voimalik_alluvus_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("voimalik_alluvus_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("voimalik_alluvus_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     

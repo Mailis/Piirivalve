@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_piirivalve_entities_Admin_alluvus" items="${admin_alluvuses}" z="9zkmh3TAU6mLcxxh/J/Gg8jvT7k=">
         <table:table data="${admin_alluvuses}" id="l_ee_piirivalve_entities_Admin_alluvus" path="/admin_alluvuses" z="o48JDm0QiTMRuDWnyiIR62xSqqg=">
-            <table:column id="c_ee_piirivalve_entities_Admin_alluvus_ylemus_yksus" property="ylemus_yksus" z="I6/PIA7HUPXZaJvor7lwNHkMGco="/>
-            <table:column id="c_ee_piirivalve_entities_Admin_alluvus_alluv_yksus" property="alluv_yksus" z="+r26HZaz2V3QfBXLIrKTZfUme1g="/>
             <table:column id="c_ee_piirivalve_entities_Admin_alluvus_avaja" property="avaja" z="Hu61wBoZ5xeDh4hrAe/puAJaqWY="/>
             <table:column date="true" dateTimePattern="${admin_alluvus_avatud_date_format}" id="c_ee_piirivalve_entities_Admin_alluvus_avatud" property="avatud" z="h4P+cpC36xirIxLoSyjICSVQhOQ="/>
             <table:column id="c_ee_piirivalve_entities_Admin_alluvus_muutja" property="muutja" z="L+KKUrenNvWDg5yzntvzg6e++d8="/>
             <table:column date="true" dateTimePattern="${admin_alluvus_muudetud_date_format}" id="c_ee_piirivalve_entities_Admin_alluvus_muudetud" property="muudetud" z="EkxClzvrECG6tN8JxPGt7MzCnNE="/>
+            <table:column id="c_ee_piirivalve_entities_Admin_alluvus_sulgeja" property="sulgeja" z="WjbbTcaWY4hgi3IAMj/woVHObw0="/>
+            <table:column date="true" dateTimePattern="${admin_alluvus_suletud_date_format}" id="c_ee_piirivalve_entities_Admin_alluvus_suletud" property="suletud" z="J9lGn1QryfZGUymj3nIWpmV0GD8="/>
         </table:table>
     </page:list>
 </div>

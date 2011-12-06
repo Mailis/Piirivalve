@@ -3,67 +3,11 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
+import ee.piirivalve.entities.Vaeosa;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Piiripunkti_alluvus_Roo_JavaBean {
-    
-    public Long Piiripunkti_alluvus.getId() {
-        return this.id;
-    }
-    
-    public void Piiripunkti_alluvus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Piiripunkti_alluvus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Piiripunkti_alluvus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Piiripunkti_alluvus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Piiripunkti_alluvus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Piiripunkti_alluvus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Piiripunkti_alluvus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Piiripunkti_alluvus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Piiripunkti_alluvus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Piiripunkti_alluvus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Piiripunkti_alluvus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Piiripunkti_alluvus.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Piiripunkti_alluvus.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Piiripunkti_alluvus.getKommentaar() {
         return this.kommentaar;
@@ -87,6 +31,10 @@ privileged aspect Piiripunkti_alluvus_Roo_JavaBean {
     
     public void Piiripunkti_alluvus.setKuni(Date kuni) {
         this.kuni = kuni;
+    }
+    
+    public void Piiripunkti_alluvus.setVaeosa(Vaeosa vaeosa) {
+        this.vaeosa = vaeosa;
     }
     
 }

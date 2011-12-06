@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Vaeosa_alluvus_Roo_JavaBean {
-    
-    public Long Vaeosa_alluvus.getId() {
-        return this.id;
-    }
-    
-    public void Vaeosa_alluvus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Vaeosa_alluvus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Vaeosa_alluvus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Vaeosa_alluvus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Vaeosa_alluvus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Vaeosa_alluvus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Vaeosa_alluvus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Vaeosa_alluvus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Vaeosa_alluvus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Vaeosa_alluvus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Vaeosa_alluvus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Vaeosa_alluvus.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Vaeosa_alluvus.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Vaeosa_alluvus.getKommentaar() {
         return this.kommentaar;

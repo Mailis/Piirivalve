@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Piiriloigu_haldaja_Roo_JavaBean {
-    
-    public Long Piiriloigu_haldaja.getId() {
-        return this.id;
-    }
-    
-    public void Piiriloigu_haldaja.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Piiriloigu_haldaja.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Piiriloigu_haldaja.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Piiriloigu_haldaja.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Piiriloigu_haldaja.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Piiriloigu_haldaja.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Piiriloigu_haldaja.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Piiriloigu_haldaja.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Piiriloigu_haldaja.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Piiriloigu_haldaja.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Piiriloigu_haldaja.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Piiriloigu_haldaja.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Piiriloigu_haldaja.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Piiriloigu_haldaja.getKommentaar() {
         return this.kommentaar;

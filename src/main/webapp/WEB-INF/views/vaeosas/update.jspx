@@ -9,12 +9,12 @@
         <field:simple field="piiriloigu_haldajad" id="c_ee_piirivalve_entities_Vaeosa_piiriloigu_haldajad" messageCode="entity_reference_not_managed" messageCodeAttribute="Piiriloigu_haldaja" z="nU89vx0HO/Uzx+7fYHS5ZBgWhVU="/>
         <field:simple field="vahtkonnad" id="c_ee_piirivalve_entities_Vaeosa_vahtkonnad" messageCode="entity_reference_not_managed" messageCodeAttribute="Vahtkond" z="3iTzXaHwEE+Lx3fvY5xPEBO/xuI="/>
         <field:simple field="ametid_vaeosas" id="c_ee_piirivalve_entities_Vaeosa_ametid_vaeosas" messageCode="entity_reference_not_managed" messageCodeAttribute="Amet_vaeosas" z="ZuJRK9y4QAqX7988nWn+LlRjUhs="/>
-        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Vaeosa_avaja" required="true" z="d1/REIo91LKWe5w2ipJpZwvUao8="/>
-        <field:datetime dateTimePattern="${vaeosa_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Vaeosa_avatud" required="true" z="W2utMtRr/GfPY+jGRNaG0yieLuU="/>
-        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Vaeosa_muutja" required="true" z="LVtmeGo+iPAYhieTShVFtozQdiU="/>
-        <field:datetime dateTimePattern="${vaeosa_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Vaeosa_muudetud" required="true" z="w9f9M+94GYob7swu/wsIvGXrJ8M="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Vaeosa_avaja" z="PiBLXwyaEewGQbWdD3CSKGwxmj0="/>
+        <field:datetime dateTimePattern="${vaeosa_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Vaeosa_avatud" z="UaAWnO8bQy3hf9mlmUAOTsgE9yc="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Vaeosa_muutja" z="P7bzCZq9p6MnhOfyDLEzQjfMnxc="/>
+        <field:datetime dateTimePattern="${vaeosa_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Vaeosa_muudetud" z="K5+kwqiO3OA/tCUimbHxtJsdkh8="/>
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Vaeosa_sulgeja" z="xn4+Y3/kYm6C/bozO5OubY49Dr8="/>
-        <field:datetime dateTimePattern="${vaeosa_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Vaeosa_suletud" required="true" z="I6y2D9qnx16TB8p7TdXJkLS0/w4="/>
+        <field:datetime dateTimePattern="${vaeosa_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Vaeosa_suletud" z="UtmeSo1hFAVn9eGh3yHjjVosV6c="/>
         <field:input field="kood" id="c_ee_piirivalve_entities_Vaeosa_kood" max="20" required="true" z="rk/srE6933htUbhfBXTlwWX5vxI="/>
         <field:textarea field="nimetus" id="c_ee_piirivalve_entities_Vaeosa_nimetus" required="true" z="MNdRKU/gKUgG9EibGYc6dlymULI="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Vaeosa_kommentaar" z="CAPr1E/nv6u01mbN7+HPn04e0RU="/>

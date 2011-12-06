@@ -20,9 +20,9 @@
 
 	<div style="float: left; width: 600px;">
 
-		<!-- Alljärgnevas on ta:pselt yhesugused create-vormikuvamised, ainult 
+		<!-- Allja:rgnevas on ta:pselt yhesugused create-vormikuvamised, ainult 
      modelAttribute on erinev. Teist korda alluvate loomise juurest naastes kuvatakse
-     täidetud väljad. ModelAttribute' i saadab siia createform klassist AdminYksuseLiigiRedaktorController
+     ta:idetud va:ljad. ModelAttribute' i saadab siia createform klassist AdminYksuseLiigiRedaktorController
      ja sellele oma korda saadab selle v6imalike alluvuste controlleri POST-meetod-->
 		<c:choose>
 			<!-- kui lehele tullakse mitmendat korda -->
@@ -66,7 +66,7 @@
 
 
 
-					<!-- näitab olemasolevaid alluvusi -->
+					<!-- na:itab olemasolevaid alluvusi -->
 					<div style="float: right; margin-right: 15px; margin-left: 25px; margin-top: -285px;">
 
 						<table style="bgcolor: #D7D7D7; width: 200px;">
@@ -122,7 +122,8 @@
 						<!-- NUPP -->
 						<!-- deployd resourcers > webapp > styles-->
 						<!-- styleSheet=resources/styles/alt.css -->
-						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp ärra koritatud ja siia toodud, 
+						<!-- tegin selle vormi jaoks uue form-tagi createLiik, 
+						     kust on nupp a:ra koritatud ja siia toodud, 
                              et seda saak paigutada kuhuvaja -->
 						<div  class="submit" id="${fn:escapeXml(id)}_submit">
 							<spring:message code="button_add" var="save_button"
@@ -234,7 +235,7 @@
 
 
 
-					<!-- näitab olemasolevaid alluvusi -->
+					<!-- na:itab olemasolevaid alluvusi -->
 					<div style="float: right; margin-left: 25px; margin-top: -280px;">
 
 						<table style="bgcolor: #D7D7D7; width: 200px;">
@@ -273,7 +274,7 @@
 						<!-- NUPP -->
 						<!-- deployd resourcers > webapp > styles-->
 						<!-- styleSheet=resources/styles/alt.css -->
-						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp ärra koritatud ja siia toodud, 
+						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp a:rra koritatud ja siia toodud, 
                              et seda saak paigutada kuhuvaja -->
 						<div  class="submit" id="${fn:escapeXml(id)}_submit">
 							<spring:message code="button_add" var="save_button"

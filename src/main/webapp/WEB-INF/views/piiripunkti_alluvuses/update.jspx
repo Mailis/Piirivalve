@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ee_piirivalve_entities_Piiripunkti_alluvus" modelAttribute="piiripunkti_alluvus" path="/piiripunkti_alluvuses" versionField="Version" z="sQ8doCRPxvs2suIGrnzGb/HxAGY=">
         <field:select field="vaeosa" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_vaeosa" itemValue="id" items="${vaeosas}" path="/vaeosas" z="MDhyaprjVKvP/ZS1ZPOxIXgTNlQ="/>
-        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avaja" required="true" z="nUHvyd2zrSv/YSgRgoDZrvNCI7o="/>
-        <field:datetime dateTimePattern="${piiripunkti_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avatud" required="true" z="jKH5Z6b/2DfEVTfQt8wOLR+LK7I="/>
-        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muutja" required="true" z="oFFvX18D99GLGW64lYGRDLioYR0="/>
-        <field:datetime dateTimePattern="${piiripunkti_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muudetud" required="true" z="DznNCztAGCDwd0NP6BD/+hZfTLc="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avaja" z="ZlPbmxPqW2ZMNtcIKYMkiHPgKvo="/>
+        <field:datetime dateTimePattern="${piiripunkti_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_avatud" z="elcuMDSeEu3tM2E+tT0tfLrnokQ="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muutja" z="Tp3AQX1vFj0DOyE6PrKCgUEwSFs="/>
+        <field:datetime dateTimePattern="${piiripunkti_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_muudetud" z="8e05YDlK1Hsp1BuesVnvbDg5fJA="/>
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_sulgeja" z="SDmsa/0T/9yDyvXrVguKGVnL4F0="/>
-        <field:datetime dateTimePattern="${piiripunkti_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_suletud" required="true" z="uCxdXMyZ5CdyhhStdaPIt61t6aw="/>
+        <field:datetime dateTimePattern="${piiripunkti_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_suletud" z="1bWhAkALAZK+f8Bs6TrdQag+pAM="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_kommentaar" z="nmdMEsKYV2C5cJj30YspWRMrKqs="/>
         <field:datetime dateTimePattern="${piiripunkti_alluvus_alates_date_format}" field="alates" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_alates" required="true" z="oPLC68arDw2T6yT6BisDnyGx0OM="/>
         <field:datetime dateTimePattern="${piiripunkti_alluvus_kuni_date_format}" field="kuni" id="c_ee_piirivalve_entities_Piiripunkti_alluvus_kuni" required="true" z="NLHDu9zsyori5Efn9syekvsEVBY="/>

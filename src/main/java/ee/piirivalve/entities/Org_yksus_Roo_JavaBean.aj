@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Org_yksus_Roo_JavaBean {
-    
-    public Long Org_yksus.getId() {
-        return this.id;
-    }
-    
-    public void Org_yksus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Org_yksus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Org_yksus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Org_yksus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Org_yksus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Org_yksus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Org_yksus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Org_yksus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Org_yksus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Org_yksus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Org_yksus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Org_yksus.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Org_yksus.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Org_yksus.getKood() {
         return this.kood;

@@ -5,12 +5,12 @@
     <form:update id="fu_ee_piirivalve_entities_Voimalik_alluvus" modelAttribute="voimalik_alluvus" path="/voimalik_alluvuses" versionField="Version" z="LlGPoK/gXU92CNN3V45S7xg49r4=">
         <field:select field="riigi_admin_yksuse_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_riigi_admin_yksuse_liik" itemValue="id" items="${riigi_admin_yksuse_liiks}" path="/riigi_admin_yksuse_liiks" z="I+AzB8kxdw3JD/9Bgdmr/x2lXTM="/>
         <field:select field="voimalik_alluv_liik" id="c_ee_piirivalve_entities_Voimalik_alluvus_voimalik_alluv_liik" itemValue="id" items="${riigi_admin_yksuse_liiks}" path="/riigi_admin_yksuse_liiks" z="SGjvnirBhrKr/7E14HBTslYGJRI="/>
-        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja" required="true" z="0EHnWk5vQB4rEjRSlipj6L3J+JA="/>
-        <field:datetime dateTimePattern="${voimalik_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud" required="true" z="EuFgOaAzofFlHW5fGSSRlDeWatw="/>
-        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja" required="true" z="JNUUOOXoPxhrSRNGu0NFtBUQoA4="/>
-        <field:datetime dateTimePattern="${voimalik_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud" required="true" z="8Y1SQ3yt6vkVJsHOf4DC7++3G/8="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Voimalik_alluvus_avaja" z="HwB9iZC6IeznW2YTB9CJ+H8OBeg="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Voimalik_alluvus_avatud" z="llsTTc76AjTnbC19svGsf+bwG2U="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Voimalik_alluvus_muutja" z="okLBr3KfHwPjF3uHCt8x5KEw9CM="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Voimalik_alluvus_muudetud" z="95NfqPUn/mhxAiCzqXyAEHryZ/M="/>
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Voimalik_alluvus_sulgeja" z="XdGBDztH3NRfiHDJYReHo7e80no="/>
-        <field:datetime dateTimePattern="${voimalik_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Voimalik_alluvus_suletud" required="true" z="V22PiDovH6HED6CLyXxD1wOlwi8="/>
+        <field:datetime dateTimePattern="${voimalik_alluvus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Voimalik_alluvus_suletud" z="jPW5Ez8993M15qpMRnRr+HV1Xvo="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Voimalik_alluvus_kommentaar" z="jTS4lCt8/BTd7q7PgHLWxMH7nWw="/>
     </form:update>
 </div>

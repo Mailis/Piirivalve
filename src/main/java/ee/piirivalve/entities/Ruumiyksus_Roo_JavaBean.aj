@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Ruumiyksus_Roo_JavaBean {
-    
-    public Long Ruumiyksus.getId() {
-        return this.id;
-    }
-    
-    public void Ruumiyksus.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Ruumiyksus.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Ruumiyksus.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Ruumiyksus.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Ruumiyksus.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Ruumiyksus.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Ruumiyksus.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Ruumiyksus.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Ruumiyksus.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Ruumiyksus.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Ruumiyksus.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Ruumiyksus.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Ruumiyksus.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Ruumiyksus.getKood() {
         return this.kood;

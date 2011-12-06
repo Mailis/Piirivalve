@@ -3,67 +3,10 @@
 
 package ee.piirivalve.entities;
 
-import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Vahtkond_Roo_JavaBean {
-    
-    public Long Vahtkond.getId() {
-        return this.id;
-    }
-    
-    public void Vahtkond.setId(Long id) {
-        this.id = id;
-    }
-    
-    public String Vahtkond.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Vahtkond.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Vahtkond.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Vahtkond.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Vahtkond.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Vahtkond.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Vahtkond.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Vahtkond.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Vahtkond.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Vahtkond.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Vahtkond.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Vahtkond.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Vahtkond.getKood() {
         return this.kood;

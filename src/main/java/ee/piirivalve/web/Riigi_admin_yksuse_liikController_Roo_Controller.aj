@@ -100,8 +100,8 @@ privileged aspect Riigi_admin_yksuse_liikController_Roo_Controller {
     }
     
     void Riigi_admin_yksuse_liikController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("riigi_admin_yksuse_liik_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("riigi_admin_yksuse_liik_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("riigi_admin_yksuse_liik_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("riigi_admin_yksuse_liik_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("riigi_admin_yksuse_liik_alates_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("riigi_admin_yksuse_liik_kuni_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));

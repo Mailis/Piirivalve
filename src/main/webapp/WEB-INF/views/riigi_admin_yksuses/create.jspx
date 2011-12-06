@@ -8,12 +8,12 @@
         <field:simple field="admin_alluvused_1" id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_1" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin_alluvus" z="ImxByW10bHno781542Mumt9Eb8A="/>
         <field:simple field="admin_alluvused_2" id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_2" messageCode="entity_reference_not_managed" messageCodeAttribute="Admin_alluvus" z="2ERakEwnFjBkaJ4u8NUHjeZJteU="/>
         <field:simple field="ruumiyksused" id="c_ee_piirivalve_entities_Riigi_admin_yksus_ruumiyksused" messageCode="entity_reference_not_managed" messageCodeAttribute="Ruumiyksus" z="I+Gm2Bq88tkUJfYdYVukDTu7mO4="/>
-        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avaja" required="true" z="M2gIbPmgR0V7MrsXs60rirZ3vRs="/>
-        <field:datetime dateTimePattern="${riigi_admin_yksus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avatud" required="true" z="dg7uTfg+lfIotykby1TwQmWbu2Y="/>
-        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muutja" required="true" z="+Trx9QiLXB7gUUH+leYb6Bht7FY="/>
-        <field:datetime dateTimePattern="${riigi_admin_yksus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muudetud" required="true" z="QTM1Ad8/hl3OylenGHwkYOzH0Rk="/>
+        <field:textarea field="avaja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avaja" z="puySchtUsClLIDUeQ659xdWt+J4="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_avatud_date_format}" field="avatud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avatud" z="9yy77rUm/qDtvTkzS+0QNvYxTlk="/>
+        <field:textarea field="muutja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muutja" z="9XDWShPGALz6jgtdTDx2fneJTB4="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_muudetud_date_format}" field="muudetud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muudetud" z="mKfXPDl7SLk/qaoBDd0LNxS1ONg="/>
         <field:textarea field="sulgeja" id="c_ee_piirivalve_entities_Riigi_admin_yksus_sulgeja" z="3tyg7M3F5jXNW4eXPd71pMjHvSY="/>
-        <field:datetime dateTimePattern="${riigi_admin_yksus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_suletud" required="true" z="z3TXEh1n3TfOxN4hc4A5m6B+TrY="/>
+        <field:datetime dateTimePattern="${riigi_admin_yksus_suletud_date_format}" field="suletud" id="c_ee_piirivalve_entities_Riigi_admin_yksus_suletud" z="GdDWER8T+3Whtkz97RlsWC8q7H8="/>
         <field:input field="kood" id="c_ee_piirivalve_entities_Riigi_admin_yksus_kood" max="20" required="true" z="T2kOLzP+MPWu7REqVwhrExJ5uAM="/>
         <field:textarea field="nimetus" id="c_ee_piirivalve_entities_Riigi_admin_yksus_nimetus" required="true" z="T9AoZd/oieE/roW5H145dv59J3g="/>
         <field:input field="kommentaar" id="c_ee_piirivalve_entities_Riigi_admin_yksus_kommentaar" z="lTkIhb4qXnIyDcrSdwvfzYGAZUY="/>

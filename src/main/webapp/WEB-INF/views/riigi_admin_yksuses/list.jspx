@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_piirivalve_entities_Riigi_admin_yksus" items="${riigi_admin_yksuses}" z="HP0WdiBq08uAiWo4LRHCcwHusIQ=">
         <table:table data="${riigi_admin_yksuses}" id="l_ee_piirivalve_entities_Riigi_admin_yksus" path="/riigi_admin_yksuses" z="gcGJCH6D8aB75chm1YScxVF9UXo=">
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_riigi_admin_yksuse_liik" property="riigi_admin_yksuse_liik" z="0lKzE1xrVynFvdGqEzDemHtm9BQ="/>
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_vaeosad" property="vaeosad" z="Xp+whc7xwLlyZ2KNCjW9tr7ZfsU="/>
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_1" property="admin_alluvused_1" z="TanRRUkNgbeZJWeEBwR6rcBI4Tw="/>
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_admin_alluvused_2" property="admin_alluvused_2" z="tAEbrzx0dhckEPFXaUnbKfTw5j8="/>
-            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_ruumiyksused" property="ruumiyksused" z="UZUpH/qswVlCp3wbonWvmwy0tkY="/>
             <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_avaja" property="avaja" z="fjs75LlDP5C+rx4DIhira3NNlIo="/>
+            <table:column date="true" dateTimePattern="${riigi_admin_yksus_muudetud_date_format}" id="c_ee_piirivalve_entities_Riigi_admin_yksus_muudetud" property="muudetud" z="WARHn70vEbRf6FOST4CnrPe1LdU="/>
+            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_muutja" property="muutja" z="EimXoQ0JKkV/roQVeSH6l7rkEQE="/>
+            <table:column date="true" dateTimePattern="${riigi_admin_yksus_avatud_date_format}" id="c_ee_piirivalve_entities_Riigi_admin_yksus_avatud" property="avatud" z="mZAvUX3NoyHPdVsC1dt4gNVyqNU="/>
+            <table:column id="c_ee_piirivalve_entities_Riigi_admin_yksus_sulgeja" property="sulgeja" z="hrp3xyLdGgDeRYM3kKF5IUldnYk="/>
+            <table:column date="true" dateTimePattern="${riigi_admin_yksus_suletud_date_format}" id="c_ee_piirivalve_entities_Riigi_admin_yksus_suletud" property="suletud" z="7ndYw2nleVGz0QSyhM4gHNqSiMw="/>
         </table:table>
     </page:list>
 </div>
