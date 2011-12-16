@@ -24,12 +24,14 @@
 		  <intercept-url pattern="/vaeosas/**" access="hasRole('ROLE_ADMIN')" /> 
 		  <intercept-url pattern="/vahtkonds/**" access="hasRole('ROLE_ADMIN')" /> 
 		  <intercept-url pattern="/voimalik_alluvuses/**" access="hasRole('ROLE_ADMIN')" /> 
-		        
+		  
+		<!--   
         <intercept-url pattern="/choices/**" access="hasRole('ROLE_ADMIN')"/>
         <intercept-url pattern="/member/**" access="isAuthenticated()" />
+         -->   
         <intercept-url pattern="/resources/**" access="permitAll" />
-        <intercept-url pattern="/**" access="permitAll" />
-          <intercept-url pattern="/login" access="permitAll" /> 
+        <intercept-url pattern="/login" access="permitAll" /> 
+        <intercept-url pattern="/**" access="isAuthenticated()" />
         
     </http>
 
