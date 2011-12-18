@@ -55,8 +55,8 @@
             <menu:item id="i_ruumiyksus_new" messageCode="global_menu_new" url="/ruumiyksuses?form" z="vsJMr2RxNRIRO0KUMkiQmqazO2k="/>
             <menu:item id="i_ruumiyksus_list" messageCode="global_menu_list" url="/ruumiyksuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iT1dxrRs+dmtDClpX+SEDL2CwVg="/>
         </menu:category>
-        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+       <!--  <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__adminyksuseliigiredaktorindex_id" messageCode="global_generic" url="/adminyksuseliigiredaktor/index" z="WVKyxX9PTTpUZ9nrJXy4zZdfUHw="/>
-        </menu:category>
+        </menu:category>--> 
     </menu:menu>
 </div>
