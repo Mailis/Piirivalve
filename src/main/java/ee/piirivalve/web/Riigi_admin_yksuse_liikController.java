@@ -1,35 +1,32 @@
 package ee.piirivalve.web;
 
  
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
 
-import javax.persistence.PrePersist;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import ee.piirivalve.entities.Riigi_admin_yksuse_liik;
 import ee.piirivalve.entities.Voimalik_alluvus;
 
-import org.apache.commons.collections.MapUtils;
 import org.springframework.roo.addon.web.mvc.controller.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import antlr.collections.List;
 
 @RooWebScaffold(path = "riigi_admin_yksuse_liiks", formBackingObject = Riigi_admin_yksuse_liik.class)
 @RequestMapping("/riigi_admin_yksuse_liiks")
 @Controller
 public class Riigi_admin_yksuse_liikController {
 	
+
+  	//võrdlemiseks eemalda-nupu ajutine nimi
+  	String realEemalda ="";
 	
 	
     @RequestMapping(method = RequestMethod.POST)
@@ -100,10 +97,24 @@ public class Riigi_admin_yksuse_liikController {
     		v6imalik.persist();
     		
     		return "redirect:/adminyksuseliigiredaktor/index";
+    	}//kui vajutati eemalda-nuppu
+    	else if(nupunimi.equalsIgnoreCase("lisa")){      
+            return "redirect:/voimalik_alluvuses"+"?form&liigiID=" + liigiId; 
+   	    }
+    	else if(nupunimi.equalsIgnoreCase("eemalda")){
+    	    //v6imaliku alluvuse id sulgemiseks
+    		String vIdstr = this.realEemalda.substring("eemalda".length());
+    		Long vId = Long.valueOf(vIdstr);
+    		Voimalik_alluvus vaEemaldatav = Voimalik_alluvus.findVoimalik_alluvus(vId);
+    		vaEemaldatav.setSuletud(new Date());
+    		uiModel.asMap().clear();
+    		vaEemaldatav.merge();
+    		
+    		return "redirect:/adminyksuseliigiredaktor/index?liigiID=" + liigiId;
     	}
     	else
     		return "redirect:/voimalik_alluvuses";
-    }        		                           
+        }        		                           
    
     //minu elupäästja, keda ma kolm nädalat otsisin:
     // http://stackoverflow.com/questions/2025280/have-multiple-submit-buttons-in-a-form-and-determine-which-was-pressed-in-a-cont
@@ -116,13 +127,21 @@ public class Riigi_admin_yksuse_liikController {
                         /* Search for the button name as given in 
                            the 'value' attribute for the input tag */
                         if ("Lisa".equals(entry.getValue()[0]) || 
-                        	"Eemalda".equals(entry.getValue()[0]) ||
                         	"Salvesta".equals(entry.getValue()[0]) ||
                         	"Salvesta2".equals(entry.getValue()[0])){ 
                                 buttonName = entry.getKey(); 
                                 break; 
-                        } 
+                        }
                 } 
+                for (Map.Entry<String, String[]> entry : paramMap.entrySet()) {
+                    /* Search for the button name as given in 
+                       the 'value' attribute for the input tag */
+                    if ("Eemalda".equals(entry.getValue()[0])){ 
+                    	    this.realEemalda = entry.getKey();
+                            buttonName = "eemalda"; 
+                            break; 
+                    }
+            } 
         } 
         return buttonName; 
     } 

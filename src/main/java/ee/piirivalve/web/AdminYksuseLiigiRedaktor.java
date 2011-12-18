@@ -38,11 +38,6 @@ public class AdminYksuseLiigiRedaktor {
 	@RequestMapping(value="index", method = RequestMethod.POST)
     public void post() {
     }
-*/	
-/*	
-    @RequestMapping(method = RequestMethod.POST, value = "{id}")
-    public void post(@PathVariable Long id, ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
-    }
 */    
     //kui pealehel ollaks esimest korda
     @RequestMapping
@@ -71,8 +66,7 @@ public class AdminYksuseLiigiRedaktor {
     		//seda ion vaja <c:out..>va:a:rtuseks, et kuvada olemasolevaid alluvusi
     		Riigi_admin_yksuse_liik valitudLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(liigiID);
     		uiModel.addAttribute("valitudLiik", valitudLiik);
-    		uiModel.addAttribute("alluvadAdminYksysed", annaOlOlAlluvad(valitudLiik));
-    		uiModel.addAttribute("v6imalikudalluvadalluvad", annaV6imalikualluvuseID(valitudLiik));
+    		uiModel.addAttribute("voimalikudAlluvad", annaV6imalikualluvuseList(valitudLiik));
     		
     	}
         uiModel.addAttribute("riigi_admin_yksuse_liik", new Riigi_admin_yksuse_liik());
@@ -107,7 +101,7 @@ public class AdminYksuseLiigiRedaktor {
         return Riigi_admin_yksuse_liik.findAllRiigi_admin_yksuse_liiks();
     }
     
-    public List<Voimalik_alluvus> annaV6imalikualluvuseID(Riigi_admin_yksuse_liik ylemLiik){
+    public List<Voimalik_alluvus> annaV6imalikualluvuseList(Riigi_admin_yksuse_liik ylemLiik){
     	Voimalik_alluvus v6i = null;
     	List<Voimalik_alluvus> vaList = new ArrayList<Voimalik_alluvus>();
 		for(Voimalik_alluvus va : Voimalik_alluvus.findAllVoimalik_alluvuses()){
@@ -118,41 +112,10 @@ public class AdminYksuseLiigiRedaktor {
     	}
 		return vaList;
     }
-    public HashMap<Long,Riigi_admin_yksuse_liik> leiaAlluvusSuhteId(Voimalik_alluvus va,Riigi_admin_yksuse_liik ylemLiik, Riigi_admin_yksuse_liik alluvLiik){
-    	HashMap<Long,Riigi_admin_yksuse_liik> mapp = new HashMap<Long,Riigi_admin_yksuse_liik>();
-    	List<Voimalik_alluvus> vaList = annaV6imalikualluvuseID(ylemLiik);
-    	mapp.clear();
-    	for(Voimalik_alluvus v : vaList){
-    		mapp.put(v.getId(), v.getVoimalik_alluv_liik());
-    	}
-    	return mapp;
-    }
-    
-/*    //eemalda-nupuasi
-    @RequestMapping(method = RequestMethod.GET)
-    public String updateForm(@PathVariable("ylemusLiik") Long ylemusLiikid, 
-    		                 @PathVariable("alluvLiikLiik") Long alluvLiikid, Model uiModel, BindingResult bindingResult, HttpServletRequest httpServletRequest) {
-        
-        Riigi_admin_yksuse_liik YlemusLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(ylemusLiikid);
-		
-		Riigi_admin_yksuse_liik AlluvLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(alluvLiikid);
-		
-		Voimalik_alluvus v6i = null;
-		for(Voimalik_alluvus va : Voimalik_alluvus.findAllVoimalik_alluvuses()){
-    		if(va.getRiigi_admin_yksuse_liik()== YlemusLiik && va.getVoimalik_alluv_liik() == AlluvLiik){
-    			v6i = va;
-    		}
-    	}
-		uiModel.addAttribute("ylemuslikLiik", YlemusLiik);
-    	uiModel.addAttribute("voimalik_alluvus", v6i);
-        addDateTimeFormatPatterns(uiModel);
-        YlemusLiik = updateMyAssEemalda(YlemusLiik, v6i, bindingResult, uiModel, httpServletRequest);
-        return "redirect:/adminyksuseliigiredaktor/index" +"?liigiID=" + YlemusLiik.getId();
-    }*/
-    
+   
     @RequestMapping(value="index?liigiID={ylemusLiik}", method = RequestMethod.PUT)
     public Riigi_admin_yksuse_liik updateMyAssEemalda(@PathVariable Long ylemusLiik, @RequestParam(required = false) Long alluvLiik, Model uiModel) {
-Riigi_admin_yksuse_liik YlemusLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(ylemusLiik);
+    Riigi_admin_yksuse_liik YlemusLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(ylemusLiik);
 		
 		Riigi_admin_yksuse_liik AlluvLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(alluvLiik);
 		

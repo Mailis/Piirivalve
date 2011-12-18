@@ -74,15 +74,18 @@
 							<th colspan="2" style="height: 30px;"><c:out
 									value="Alluvad:" /></th>
 							<c:choose>
-								<c:when test="${!empty alluvadAdminYksysed}">
-									<c:forEach items="${alluvadAdminYksysed}" var="alluvad">
+								<c:when test="${!empty voimalikudAlluvad}">
+									<c:forEach items="${voimalikudAlluvad}" var="alluvad">
 										<tr style="padding: 5px; height: 30px;">
 											<td style="width: 50%;"><c:out
-													value="${alluvad.nimetus}" /></td>
+													value="${alluvad.voimalik_alluv_liik.nimetus}" /></td>
 											<td style="width: 50%;">
-												<!-- 		EEMALDA_NUPP			 --> <spring:message code="button_add"
-													var="save_button" htmlEscape="false" /> <input
-												id="proceed" type="submit" name="eemalda" value="eemalda" />
+												<!-- 		EEMALDA_NUPP			 --> 
+												<spring:message code="button_add"
+													var="save_button" htmlEscape="false" /> 
+													<input
+													id="proceed" type="submit" 
+													name="eemalda${alluvad.id}" value="Eemalda" />
 
 
 
@@ -218,15 +221,15 @@
 							<th colspan="2" style="height: 30px;"><c:out
 									value="Alluvad:" /></th>
 							<c:choose>
-								<c:when test="${!empty alluvadAdminYksysed}">
-									<c:forEach items="${alluvadAdminYksysed}" var="alluvad">
+								<c:when test="${!empty voimalikudAlluvad}">
+									<c:forEach items="${voimalikudAlluvad}" var="alluvad">
 										<tr style="padding: 5px; height: 30px;">
 											<td style="width: 50%;"><c:out
-													value="${alluvad.nimetus}" /></td>
+													value="${alluvad.voimalik_alluv_liik.nimetus}" /></td>
 											<td style="width: 50%;">
 												<!-- 		EEMALDA_NUPP			 --> <spring:message code="button_add"
 													var="save_button" htmlEscape="false" /> <input
-												id="proceed" type="submit" name="eemalda" value="eemalda" />
+												id="proceed" type="submit" name="eemalda${alluvad.id}" value="Eemalda" />
 
 
 
