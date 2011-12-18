@@ -5,14 +5,14 @@
     <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__adminyksuseliigiredaktorindex_id" messageCode="global_generic" url="/adminyksuseliigiredaktor/index" z="WVKyxX9PTTpUZ9nrJXy4zZdfUHw="/>
-            <menu:item id="i_controller__setupindex_id" messageCode="global_generic" url="/setup/index" z="1nWlx2byRun7Iy/V1THczWoIoEs="/>
+       <!--       <menu:item id="i_controller__setupindex_id" messageCode="global_generic" url="/setup/index" z="1nWlx2byRun7Iy/V1THczWoIoEs="/> -->
         </menu:category>
         <menu:category id="c_riigi_admin_yksuse_liik" z="6BMOfDzpVou5xrgc6l6zApeQzIw=">
             <menu:item id="i_riigi_admin_yksuse_liik_new" messageCode="global_menu_new" url="/riigi_admin_yksuse_liiks?form" z="ylJ+wZRy8GBAuJ/rDVjM7anOE8I="/>
             <menu:item id="i_riigi_admin_yksuse_liik_list" messageCode="global_menu_list" url="/riigi_admin_yksuse_liiks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QEz15oxrMg0bjiO9lvEcPh+cg7Y="/>
         </menu:category>
         <menu:category id="c_voimalik_alluvus" z="iEG84WDvdAI9E3wgaaUfr9U9Fug=">
-            <menu:item id="i_voimalik_alluvus_new" messageCode="global_menu_new" url="/voimalik_alluvuses?form" z="FPHEVOSAZwWbVJhP8xjxbocOumc="/>
+         <!--    <menu:item id="i_voimalik_alluvus_new" messageCode="global_menu_new" url="/voimalik_alluvuses?form" z="FPHEVOSAZwWbVJhP8xjxbocOumc="/> --> 
             <menu:item id="i_voimalik_alluvus_list" messageCode="global_menu_list" url="/voimalik_alluvuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zEwz0PhQsNxTJq8MY9+tS4jug0M="/>
         </menu:category>
         <menu:category id="c_riigi_admin_yksus" z="vqVDk3PTW2/twE1QFMl1MPWHnnA=">
