@@ -67,7 +67,8 @@
 
 
 					<!-- na:itab olemasolevaid alluvusi -->
-					<div style="float: right; margin-right: 15px; margin-left: 25px; margin-top: -285px;">
+					<div
+						style="float: right; margin-right: 15px; margin-left: 25px; margin-top: -285px;">
 
 						<table style="bgcolor: #D7D7D7; width: 200px;">
 							<th colspan="2" style="height: 30px;"><c:out
@@ -76,24 +77,16 @@
 								<c:when test="${!empty alluvadAdminYksysed}">
 									<c:forEach items="${alluvadAdminYksysed}" var="alluvad">
 										<tr style="padding: 5px; height: 30px;">
-											<td style="width: 50%;"><c:out value="${alluvad.nimetus}" /></td>
+											<td style="width: 50%;"><c:out
+													value="${alluvad.nimetus}" /></td>
 											<td style="width: 50%;">
-<!-- 		EEMALDA_NUPP			 --> 
-             
-              <spring:url value="index" var="update_form_url">
-                <spring:param name="ylemusLiik" value="${tagasiLiik.id}"/>
-                <spring:param name="alluvLiik" value="${alluvad.id}"/>
-              </spring:url>
-              <spring:message code="button_add" var="save_button"
-								htmlEscape="false" />
-             
-              <a href="${(update_form_url)}" alt="${fn:escapeXml(update_label)}" title="${fn:escapeXml(update_label)}">
-                 <spring:message code="button_eemalda" htmlEscape="false" />
-              </a>
+												<!-- 		EEMALDA_NUPP			 --> <spring:message code="button_add"
+													var="save_button" htmlEscape="false" /> <input
+												id="proceed" type="submit" name="eemalda" value="eemalda" />
 
-						
-              
- 
+
+
+
 											</td>
 										</tr>
 									</c:forEach>
@@ -122,22 +115,15 @@
 						<!-- NUPP -->
 						<!-- deployd resourcers > webapp > styles-->
 						<!-- styleSheet=resources/styles/alt.css -->
-						<!-- tegin selle vormi jaoks uue form-tagi createLiik, 
-						     kust on nupp a:ra koritatud ja siia toodud, 
+						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp a:rra koritatud ja siia toodud, 
                              et seda saak paigutada kuhuvaja -->
-						<div  class="submit" id="${fn:escapeXml(id)}_submit">
+						<div class="submit" id="${fn:escapeXml(id)}_submit">
+
 							<spring:message code="button_add" var="save_button"
 								htmlEscape="false" />
-							<script type="text/javascript">
-								Spring
-										.addDecoration(new Spring.ValidateAllDecoration(
-												{
-													elementId : 'proceed',
-													event : 'onclick'
-												}));
-							</script>
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
+
+							<input id="proceed" type="submit" name="lisa" value="Lisa" />
+
 						</div>
 
 					</div>
@@ -151,52 +137,44 @@
 
 
 
+<!-- alumised nupud -->
 
-	<div  class="submit" style="position:absolute; margin-top: 162px;  margin-bottom:20px;">				<!-- deployd resourcers > webapp > styles-->
-				 <form action="http://localhost:8080/Piirivalve/adminyksuseliigiredaktor/index" method ="delete" > 
-						<div class="submit" id="${fn:escapeXml(id)}_submit">
-							<spring:message code="button_save" var="save_button"
-								htmlEscape="false" />
-							<script type="text/javascript">
-								Spring
-										.addDecoration(new Spring.ValidateAllDecoration(
-												{
-													elementId : 'proceed',
-													event : 'onclick'
-												}));
-							</script>
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
-						</div>
-					</form> 
+<div id = "containerf" style="position: absolute; margin-top: 20px; margin-bottom: 20px;">
+<!-- SALVESTA -->
+
+			<div class="submit" id="${fn:escapeXml(id)}_submit">
+               <spring:message code="button_add" var="save_button" htmlEscape="false" />
+               <input id="proceed" type="submit" name="salvesta2" value="Salvesta2" />
+            </div>
+                    
+<!-- LOOBU -->
+	    <div class="submit" style="margin-top: 122px; margin-left: -125px;">
+						<!-- deployd resourcers > webapp > styles-->
+						<form action="http://localhost:8080/Piirivalve">
+							<div  id="${fn:escapeXml(id)}_submit">
+								<spring:message code="button_cancel" var="cancel_button"
+									htmlEscape="false" />
+								<input id="proceed" type="submit"
+									value="${fn:escapeXml(cancel_button)}" />
+							</div>
+						</form>
 		</div>
+</div>  <!-- end of containerf -->  
 
-
-
-
-
-
-
-
+				
 				</form:createLiik>
 
 
 			</c:when>
-
-
-
-
-
-
-
-
+ 
 			<!-- kui lehele tullakse esimest korda -->
 			<c:otherwise>
-				<form:createLiik
+				
+					
+<form:createLiik
 					id="fc_ee_piirivalve_entities_Riigi_admin_yksuse_liik"
-					modelAttribute="riigi_admin_yksuse_liik"
-					path="/riigi_admin_yksuse_liiks" render="${empty dependencies}"
-					z="5anQ6mId/onrHOik+9yH8CH2U+0=">
+					modelAttribute="riigi_admin_yksuse_liik" path="/riigi_admin_yksuse_liiks"
+					render="${empty dependencies}" z="5anQ6mId/onrHOik+9yH8CH2U+0=">
 					<field:input field="kood"
 						id="c_ee_piirivalve_entities_Riigi_admin_yksuse_liik_kood"
 						max="10" required="true" z="K0NTDrpSSAuzXwxUteU/fLkz6bM=" />
@@ -232,11 +210,9 @@
 
 
 
-
-
-
 					<!-- na:itab olemasolevaid alluvusi -->
-					<div style="float: right; margin-left: 25px; margin-top: -280px;">
+					<div
+						style="float: right; margin-right: 15px; margin-left: 25px; margin-top: -285px;">
 
 						<table style="bgcolor: #D7D7D7; width: 200px;">
 							<th colspan="2" style="height: 30px;"><c:out
@@ -245,8 +221,17 @@
 								<c:when test="${!empty alluvadAdminYksysed}">
 									<c:forEach items="${alluvadAdminYksysed}" var="alluvad">
 										<tr style="padding: 5px; height: 30px;">
-											<td><c:out value="${alluvad.nimetus}" /></td>
-											<td>eemalda</td>
+											<td style="width: 50%;"><c:out
+													value="${alluvad.nimetus}" /></td>
+											<td style="width: 50%;">
+												<!-- 		EEMALDA_NUPP			 --> <spring:message code="button_add"
+													var="save_button" htmlEscape="false" /> <input
+												id="proceed" type="submit" name="eemalda" value="eemalda" />
+
+
+
+
+											</td>
 										</tr>
 									</c:forEach>
 									<tr colspan="2" style="padding: 5px; height: 30px;">
@@ -276,19 +261,13 @@
 						<!-- styleSheet=resources/styles/alt.css -->
 						<!-- tegin selle vormi jaoks uue form-tagi createLiik, kust on nupp a:rra koritatud ja siia toodud, 
                              et seda saak paigutada kuhuvaja -->
-						<div  class="submit" id="${fn:escapeXml(id)}_submit">
+						<div class="submit" id="${fn:escapeXml(id)}_submit">
+
 							<spring:message code="button_add" var="save_button"
 								htmlEscape="false" />
-							<script type="text/javascript">
-								Spring
-										.addDecoration(new Spring.ValidateAllDecoration(
-												{
-													elementId : 'proceed',
-													event : 'onclick'
-												}));
-							</script>
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
+
+							<input id="proceed" type="submit" name="lisa" value="Lisa" />
+
 						</div>
 
 					</div>
@@ -300,48 +279,34 @@
 
 
 
-	<div  class="submit" style="position:absolute; margin-top: 188px;  margin-bottom:20px;">				<!-- deployd resourcers > webapp > styles-->
-				 <form action="http://localhost:8080/Piirivalve/adminyksuseliigiredaktor/index" method ="delete" > 
-						<div class="submit" id="${fn:escapeXml(id)}_submit">
-							<spring:message code="button_save" var="save_button"
+<!-- alumised nupud -->
+<div id = "containerf" style="position: absolute; margin-top: 20px; margin-bottom: 20px;">
+<!-- SALVESTA -->
+
+					
+					<div class="submit" id="${fn:escapeXml(id)}_submit">
+
+							<spring:message code="button_add" var="save_button"
 								htmlEscape="false" />
-							<script type="text/javascript">
-								Spring
-										.addDecoration(new Spring.ValidateAllDecoration(
-												{
-													elementId : 'proceed',
-													event : 'onclick'
-												}));
-							</script>
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
+
+							<input id="proceed" type="submit" name="salvesta" value="Salvesta" />
+
 						</div>
-					</form> 
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+					
+                    
+<!-- LOOBU -->
+	    <div class="submit" style="margin-top: 92px; margin-left: -125px;">
+						<!-- deployd resourcers > webapp > styles-->
+						<form action="http://localhost:8080/Piirivalve">
+							<div class="submit" id="${fn:escapeXml(id)}_submit">
+								<spring:message code="button_cancel" var="cancel_button"
+									htmlEscape="false" />
+								<input id="proceed" type="submit" 
+									value="${fn:escapeXml(cancel_button)}" />
+							</div>
+						</form>
+					</div>
+</div>  <!-- end of containerf -->                 
 				</form:createLiik>
 			</c:otherwise>
 		</c:choose>
@@ -352,24 +317,6 @@
 	
 	
 	
-	<!-- LISA YLEMUS -->
-<!-- NUPP -->
-	
-		<!-- LOOBU -->
-		<div  class="submit" style="float:right; margin-right:70px; margin-bottom:20px;">				<!-- deployd resourcers > webapp > styles-->
-						
-                  <form action="http://localhost:8080/Piirivalve/"  >      
-                 
-						<div class="lisaAlluvaid" id="${fn:escapeXml(id)}_submit">
-							<spring:message code="button_cancel" var="save_button"
-								htmlEscape="false" />
-							
-							<input id="proceed" type="submit"
-								value="${fn:escapeXml(save_button)}" />
-						</div>
-					
-				</form>  
-		</div>
 		
 		<div style="clear: both;" />
 </div>

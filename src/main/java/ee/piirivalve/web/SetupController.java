@@ -70,8 +70,8 @@ public class SetupController {
             o2.setAvatud(new Date());
             o2.setSuletud(DateStuff.END_OF_TIME);
 
-            o2.setNimetus("maakond");
-            o2.setKood("mk");
+            o2.setNimetus("linn");
+            o2.setKood("linn");
             o2.persist();
             
             Voimalik_alluvus va = new Voimalik_alluvus();

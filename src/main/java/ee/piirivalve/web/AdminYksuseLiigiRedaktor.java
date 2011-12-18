@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collection; 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +33,12 @@ import ee.piirivalve.entities.Voimalik_alluvus;
 @RequestMapping("/adminyksuseliigiredaktor/**")
 @Controller
 public class AdminYksuseLiigiRedaktor {
+	
+/*	
+	@RequestMapping(value="index", method = RequestMethod.POST)
+    public void post() {
+    }
+*/	
 /*	
     @RequestMapping(method = RequestMethod.POST, value = "{id}")
     public void post(@PathVariable Long id, ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
@@ -65,6 +72,8 @@ public class AdminYksuseLiigiRedaktor {
     		Riigi_admin_yksuse_liik valitudLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(liigiID);
     		uiModel.addAttribute("valitudLiik", valitudLiik);
     		uiModel.addAttribute("alluvadAdminYksysed", annaOlOlAlluvad(valitudLiik));
+    		uiModel.addAttribute("v6imalikudalluvadalluvad", annaV6imalikualluvuseID(valitudLiik));
+    		
     	}
         uiModel.addAttribute("riigi_admin_yksuse_liik", new Riigi_admin_yksuse_liik());
         addDateTimeFormatPatterns(uiModel);
@@ -91,22 +100,33 @@ public class AdminYksuseLiigiRedaktor {
         catch (UnsupportedEncodingException uee) {}
         return pathSegment;
     }
-    public void setAvajaMuutja(Riigi_admin_yksuse_liik riigi_admin_yksuse_liik)
-    {
-    	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String userName = auth.getName();
-        riigi_admin_yksuse_liik.setAvaja(userName);
-    	riigi_admin_yksuse_liik.setMuutja(userName);
-    	
-    }
-    
+
     //seda kasutatakse Allub: va:lja dropboxi jaoks
     @ModelAttribute("riigi_admin_yksuse_liiks_piiks")
     public Collection<Riigi_admin_yksuse_liik> populateRiigi_admin_yksuse_liiks() {
         return Riigi_admin_yksuse_liik.findAllRiigi_admin_yksuse_liiks();
     }
     
-    
+    public List<Voimalik_alluvus> annaV6imalikualluvuseID(Riigi_admin_yksuse_liik ylemLiik){
+    	Voimalik_alluvus v6i = null;
+    	List<Voimalik_alluvus> vaList = new ArrayList<Voimalik_alluvus>();
+		for(Voimalik_alluvus va : Voimalik_alluvus.findAllVoimalik_alluvuses()){
+    		if(va.getRiigi_admin_yksuse_liik()== ylemLiik){
+    			v6i = va;
+    			vaList.add(v6i);
+    		}
+    	}
+		return vaList;
+    }
+    public HashMap<Long,Riigi_admin_yksuse_liik> leiaAlluvusSuhteId(Voimalik_alluvus va,Riigi_admin_yksuse_liik ylemLiik, Riigi_admin_yksuse_liik alluvLiik){
+    	HashMap<Long,Riigi_admin_yksuse_liik> mapp = new HashMap<Long,Riigi_admin_yksuse_liik>();
+    	List<Voimalik_alluvus> vaList = annaV6imalikualluvuseID(ylemLiik);
+    	mapp.clear();
+    	for(Voimalik_alluvus v : vaList){
+    		mapp.put(v.getId(), v.getVoimalik_alluv_liik());
+    	}
+    	return mapp;
+    }
     
 /*    //eemalda-nupuasi
     @RequestMapping(method = RequestMethod.GET)
