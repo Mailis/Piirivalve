@@ -36,6 +36,7 @@ public abstract class BaseEntity {
 	
 	@PreUpdate
 	public void updateAutoFill(){
+		setSulgeja(SecurityStuff.username());
 		setMuutja(SecurityStuff.username());
 		setMuudetud(new Date());
 	}
@@ -92,6 +93,14 @@ public abstract class BaseEntity {
 		this.avaja = avaja;
 	}
 
+	public String getSulgeja() {
+		return sulgeja;
+	}
+
+
+	public void setSulgeja(String sulgeja) {
+		this.sulgeja = sulgeja;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -110,14 +119,6 @@ public abstract class BaseEntity {
 		this.avatud = avatud;
 	}
 
-	public String getSulgeja() {
-		return sulgeja;
-	}
-
-
-	public void setSulgeja(String sulgeja) {
-		this.sulgeja = sulgeja;
-	}
 
 	public Date getSuletud() {
 		return suletud;

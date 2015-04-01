@@ -1,6 +1,7 @@
 package ee.piirivalve.web;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -32,11 +33,12 @@ public class Voimalik_alluvusController {
     public String createForm(@RequestParam(required = false) Long liigiID, Model uiModel) {
     	Voimalik_alluvus va = new Voimalik_alluvus();
     	if(liigiID != null){
-    		
     		va.setRiigi_admin_yksuse_liik(Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(liigiID));
     		//seda ion vaja <c:out..>va:a:rtuseks, et kuvada olemasolevaid alluvusi
     		Riigi_admin_yksuse_liik valitudLiik = Riigi_admin_yksuse_liik.findRiigi_admin_yksuse_liik(liigiID);
     		uiModel.addAttribute("valitudLiik", valitudLiik);
+    		//alluvate kuvamiseks redaktoris
+            uiModel.addAttribute("voimalikudAlluvad", annaV6imalikualluvuseList(valitudLiik));
     		uiModel.addAttribute("alluvadAdminYksysed", annaOlOlAlluvad(valitudLiik));
     	}
     	uiModel.addAttribute("voimalik_alluvus", va);
@@ -53,6 +55,7 @@ public class Voimalik_alluvusController {
         }
         uiModel.asMap().clear();
         voimalik_alluvus.persist();
+        
         //seda attributi kasutada saab 
         //klassi AdminYksuseLiigiRedaktor meetodi createForm parameetrina!!!
         uiModel.addAttribute("liigiID", encodeUrlPathSegment(voimalik_alluvus.getRiigi_admin_yksuse_liik().getId().toString(), httpServletRequest));                                       //liigiID ilmub aadressireale 
@@ -69,7 +72,24 @@ public class Voimalik_alluvusController {
     	return ololAlluvad;
     }
     
-    
+    public List<Voimalik_alluvus> annaV6imalikualluvuseList(Riigi_admin_yksuse_liik ylemLiik){
+    	Voimalik_alluvus v6i = null;
+    	List<Voimalik_alluvus> vaList = new ArrayList<Voimalik_alluvus>();
+		for(Voimalik_alluvus va : Voimalik_alluvus.findAllVoimalik_alluvuses()){
+    		if(va.getRiigi_admin_yksuse_liik()== ylemLiik){
+    			//ära näita suletud alluvaid
+    			//eilse kuup saamine
+    			Calendar rightNow = Calendar.getInstance();
+    	     	rightNow.add(Calendar.DATE, +1);
+    	     	Date homme = rightNow.getTime();
+    			if(!(va.getSuletud().before(homme))){
+    			   v6i = va;
+    			   vaList.add(v6i);
+    			}
+    		}
+    	}
+		return vaList;
+    }
     
     
     

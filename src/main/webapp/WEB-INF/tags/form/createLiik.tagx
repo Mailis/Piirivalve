@@ -69,7 +69,9 @@
 		<spring:message arguments="${label}" code="entity_create"
 			var="title_msg" htmlEscape="false" />
 		<util:panel id="${id}" title="${title_msg}" openPane="${openPane}">
-			<spring:url value="${path}" var="form_url" />
+		<spring:url value="${path}" var="form_url" />
+		
+			
 			<form:form action="${fn:escapeXml(form_url)}" method="POST"
 				modelAttribute="${modelAttribute}" enctype="${enctype}"
 				onsubmit="encodePk()">
@@ -77,7 +79,7 @@
 				<c:if test="${not empty compositePkField}">
 					<form:hidden id="_${fn:escapeXml(compositePkField)}_id"
 						path="${fn:escapeXml(compositePkField)}" />
-					<script type="text/javascript">
+		<script type="text/javascript">
           <![CDATA[
             dojo.require("dojox.encoding.base64");
             function encodePk() {
@@ -97,7 +99,7 @@
           </script>
 				</c:if>
 				<jsp:doBody />
-
+				
 			</form:form>
 		</util:panel>
 	</c:if>
